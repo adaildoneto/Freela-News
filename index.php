@@ -15,33 +15,38 @@
 
 get_header(); ?>
 
-	<main id="content" class="<?php echo odin_classes_page_sidebar(); ?>" tabindex="-1" role="main">
-
+<div class="col l5">
+	  <div class="carousel carousel-slider">
 			<?php
-				if ( have_posts() ) :
-					// Start the Loop.
-					while ( have_posts() ) : the_post();
 
-						/*
-						 * Include the post format-specific template for the content. If you want to
-						 * use this in a child theme, then include a file called content-___.php
-						 * (where ___ is the post format) and that will be used instead.
-						 */
-						get_template_part( 'content', get_post_format() );
+			 			$args = array (
+			 			  'pagination'             => false,
+			 				'tag'										 => array ('slider'),
+			 			  'posts_per_page'         => 4,
+			 			  'ignore_sticky_posts'    => true,
 
-					endwhile;
+			 			);
+			 			// The Query
+			 			$query = new WP_Query( $args );
 
-					// Post navigation.
-					odin_paging_nav();
+			 			// The Loop
+			 			while ( $query->have_posts() ) {
 
-				else :
-					// If no content, include the "No posts found" template.
-					get_template_part( 'content', 'none' );
+			 				get_template_part( 'slider', '' );
 
-				endif;
-			?>
+											}
 
-	</main><!-- #content -->
+			        		    wp_reset_postdata();
+
+
+			 			?>
+  </div>
+</div>
+
+<div class="col l4">
+
+</div>
+
 
 <?php
 get_sidebar();

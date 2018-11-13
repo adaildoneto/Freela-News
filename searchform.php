@@ -7,13 +7,15 @@
  */
 ?>
 
-<form method="get" id="searchform" class="form-inline" action="<?php echo esc_url( home_url( '/' ) ); ?>" role="search">
-	<div class="input-group">
-		<input type="search" class="form-control" name="s" id="s" value="<?php echo get_search_query(); ?>" placeholder="<?php esc_attr_e( 'Search', 'odin' ); ?>" />
-		<span class="input-group-btn">
-			<button type="submit" class="btn btn-default" value="<?php esc_attr_e( 'Search', 'odin' ); ?>">
-				<i class="glyphicon glyphicon-search"></i>
-			</button>
-		</span><!-- /input-group-btn -->
-    </div><!-- /input-group -->
-</form><!-- /searchform -->
+<div class="row">
+			<form method="get" class="col s12" action="<?php echo esc_url( home_url( '/' ) ); ?>" role="search">
+				<div class="input-field col s10">
+					 <input id="icon_prefix" type="search" value="<?php echo get_search_query(); ?>" class="validate" name="s"/>
+
+				 </div>
+				 <div class="class col s2">
+			 <label for="icon_prefix" class="label-icon right"><i class="material-icons">search</i></label>
+				 </div>
+
+			 </form>
+</div>

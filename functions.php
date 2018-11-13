@@ -220,16 +220,22 @@ function odin_enqueue_scripts() {
 	$template_url = get_template_directory_uri();
 
 	// Loads Odin main stylesheet.
-	wp_enqueue_style( 'odin-style', get_stylesheet_uri(), array(), null, 'all' );
+	// wp_enqueue_style( 'odin-style', get_stylesheet_uri(), array(), null, 'all' );
 
+	//Carregando o MaterializeCSS
+	wp_enqueue_style ('Materilizecss', $template_url . '/css/materialize.css', null, 'all');
+
+	//Carregando MaterializeJS
+	wp_enqueue_script ('MaterializeJS', $template_url . '/js/materialize.js', array( 'jquery' ), null, true);
+	wp_enqueue_script ('CustomJS', $template_url . '/js/custom.js', array( 'jquery' ), null, true);
+	
 	// Html5Shiv
 	wp_enqueue_script( 'html5shiv', $template_url . '/assets/js/html5.js' );
 	wp_script_add_data( 'html5shiv', 'conditional', 'lt IE 9' );
 
 	// General scripts.
 	if ( defined( 'SCRIPT_DEBUG' ) && SCRIPT_DEBUG ) {
-		// Bootstrap.
-		wp_enqueue_script( 'bootstrap', $template_url . '/assets/js/libs/bootstrap.min.js', array( 'jquery' ), null, true );
+
 
 		// FitVids.
 		wp_enqueue_script( 'fitvids', $template_url . '/assets/js/libs/jquery.fitvids.js', array( 'jquery' ), null, true );
