@@ -1,1 +1,6 @@
-$('.single-item').slick();
+
+(function($){
+    $(document).ready(function(){
+        $('#slider').slick();
+      });
+  })(jQuery);

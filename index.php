@@ -16,7 +16,7 @@
 get_header(); ?>
 
 <div class="col S12 l6">
-		  <div class="single-item">
+		  <div id="slider">
 	<?php
 
     $myargs = array (
