@@ -227,26 +227,29 @@ function odin_enqueue_scripts() {
 
 	//Carregando MaterializeJS
 	wp_enqueue_script ('MaterializeJS', $template_url . '/js/materialize.js', array( '' ), null, true);
-	wp_enqueue_script ('MaterializeminJS', $template_url . '/js/materialize.min.js', array( '' ), null, true);
+	wp_enqueue_script ('MaterializeJS', $template_url . '/js/materialize.min.js', array( '' ), null, true);
 	wp_enqueue_script ('CustomJS', $template_url . '/js/custom.js', array( 'jquery' ), null, true);
+	wp_enqueue_script ('SlickJS', $template_url . '/slick/slick.js', array( 'jquery' ), null, true);
+	wp_enqueue_style ('SlicCSS', $template_url . '/slick/slick.css', array( '' ), null, true);
+	wp_enqueue_script ('Jquery', $template_url. '/js/jquery-3.3.1.min.js', array (' '), null, true);
 
 	// Html5Shiv
 	wp_enqueue_script( 'html5shiv', $template_url . '/assets/js/html5.js' );
 	wp_script_add_data( 'html5shiv', 'conditional', 'lt IE 9' );
 
 	// General scripts.
-	if ( defined( 'SCRIPT_DEBUG' ) && SCRIPT_DEBUG ) {
+//	if ( defined( 'SCRIPT_DEBUG' ) && SCRIPT_DEBUG ) {
 
 
 		// FitVids.
-		wp_enqueue_script( 'fitvids', $template_url . '/assets/js/libs/jquery.fitvids.js', array( 'jquery' ), null, true );
+		//  wp_enqueue_script( 'fitvids', $template_url . '/assets/js/libs/jquery.fitvids.js', array( 'jquery' ), null, true );
 
 		// Main.
-	  // wp_enqueue_script( 'odin-main', $template_url . '/assets/js/main.js', array( 'jquery' ), null, true );
-	  //} else {
+		// wp_enqueue_script( 'odin-main', $template_url . '/assets/js/main.js', array( 'jquery' ), null, true );
+//  } else {
 		// Grunt main file with Bootstrap, FitVids and others libs.
-		// wp_enqueue_script( 'odin-main-min', $template_url . '/assets/js/main.min.js', array( 'jquery' ), null, true );
-		// }
+	//	wp_enqueue_script( 'odin-main-min', $template_url . '/assets/js/main.min.js', array( 'jquery' ), null, true );
+//	}
 
 	// Grunt watch livereload in the browser.
 	// wp_enqueue_script( 'odin-livereload', 'http://localhost:35729/livereload.js?snipver=1', array(), null, true );

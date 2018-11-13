@@ -15,35 +15,39 @@
 
 get_header(); ?>
 
-<div class="col l5">
-	  <div class="carousel carousel-slider">
-			<?php
+<div class="col S12 l6">
+		  <div class="single-item">
+	<?php
 
-			 			$args = array (
-			 			  'pagination'             => false,
-			 				'tag'										 => array ('slider'),
-			 			  'posts_per_page'         => 4,
-			 			  'ignore_sticky_posts'    => true,
+    $myargs = array (
+      'pagination'             => false,
+      'cat'							   			=> 2,
+      'posts_per_page'         => 6,
+      'ignore_sticky_posts'    => true,
 
-			 			);
-			 			// The Query
-			 			$query = new WP_Query( $args );
+    );
+    // The Query
+    $myquery = new WP_Query( $myargs );
 
-			 			// The Loop
-			 			while ( $query->have_posts() ) {
+    // The Loop
+    while ( $myquery->have_posts() ) {
 
-			 				get_template_part( 'slider', '' );
-
-											}
-
-			        		    wp_reset_postdata();
+        $myquery->the_post();
 
 
-			 			?>
+
+        get_template_part( 'slider', '' );
+
+
+              wp_reset_postdata();
+
+      }
+
+    ?>
   </div>
 </div>
 
-<div class="col l4">
+<div class="col S12 l3">
 
 </div>
 
