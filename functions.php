@@ -20,6 +20,9 @@ if ( ! isset( $content_width ) ) {
 	$content_width = 600;
 }
 
+add_image_size( "slider", 600, 400, array ( 'center', 'top' ) );
+add_image_size( "cardnews", 280, 120, array ( 'center', 'top' ) );
+add_image_size( "quadrado", 80, 80, array ( 'center', 'top' ) );
 /**
  * Odin Classes.
  */
@@ -224,16 +227,17 @@ function odin_enqueue_scripts() {
 
 	//Carregando o MaterializeCSS
 	wp_enqueue_style ('Materilizecss', $template_url . '/css/materialize.css', null, 'all');
-	wp_enqueue_style ('slickCSS', $template_url . '/slick/slick.css', array( '' ), null, 'all');
-	wp_enqueue_style ('slickThemeCSS', $template_url . '/slick/slick-theme.css', array( '' ), null, 'all');
+	wp_enqueue_style ('Stylecss', $template_url . '/css/style.css', null, 'all');
+	wp_enqueue_style ('slickCSS', $template_url . '/slick/slick.css');
+	wp_enqueue_style ('slickThemeCSS', $template_url . '/slick/slick-theme.css');
 
 	//Carregando MaterializeJS
 	wp_enqueue_script ('MaterializeJS', $template_url . '/js/materialize.js');
 //	wp_enqueue_script ('MaterializeJS', $template_url . '/js/materialize.min.js', array( '' ), null, 'all');
-	wp_enqueue_script ('CustomJS', $template_url . '/js/custom.js', array( 'jquery' ), null, 'all');
-	wp_enqueue_script ('jQuery1.11', $template_url . 'js\jquery-1.11.0.min.js', array( 'jquery' ), null, 'all');
-	wp_enqueue_script ('jQuery-Migrate', $template_url . 'js\jquery-migrate-1.2.1.min.js', array( 'jquery' ), null, 'all');
-	wp_enqueue_script ('slickJS', $template_url . '/slick/slick.js', array( 'jquery' ), null, 'all');
+	wp_enqueue_script ('jQuery1.11', $template_url . '/js/jquery-1.11.0.min.js');
+	wp_enqueue_script ('jQuery-Migrate', $template_url . '/js/jquery-migrate-1.2.1.min.js');
+	wp_enqueue_script ('slickJS', $template_url . '/slick/slick.min.js');
+	wp_enqueue_script ('CustomJS', $template_url . '/js/custom.js');
 
 	// Html5Shiv
 	wp_enqueue_script( 'html5shiv', $template_url . '/assets/js/html5.js' );
@@ -254,7 +258,7 @@ function odin_enqueue_scripts() {
 //	}
 
 	// Grunt watch livereload in the browser.
-	// wp_enqueue_script( 'odin-livereload', 'http://localhost:35729/livereload.js?snipver=1', array(), null, true );
+	 // wp_enqueue_script( 'odin-livereload', 'http://localhost:35729/livereload.js?snipver=1', array(), null, true );
 
 	// Load Thread comments WordPress script.
 	if ( is_singular() && get_option( 'thread_comments' ) ) {

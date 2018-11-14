@@ -1,0 +1,37 @@
+/* Desktops and laptops ----------- */
+@media only screen
+and (min-width : 992px) {
+    .container  {
+      width: 990px;
+    }
+}
+
+/* Large screens ----------- */
+@media only screen
+and (min-width : 1200px) {
+      .container  {
+        width: 1180px;
+      }
+}
+
+
+.slider-post {
+  height: 400px;
+}
+
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+.news {
+    padding: 5px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    font-size: 1.1rem;
+}
+
+.newscard {
+    margin-bottom: 10px;
+}
+
+.hnewscard {
+    max-height: 80px;
+}
