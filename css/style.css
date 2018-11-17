@@ -2,7 +2,7 @@
 @media only screen
 and (min-width : 992px) {
     .container  {
-      width: 990px;
+      width: 980px;
     }
 }
 
@@ -16,16 +16,54 @@ and (min-width : 1200px) {
 
 
 .slider-post {
-  height: 400px;
+  height: 320px;
+  width: 575px;
 }
 
 @import url('https://fonts.googleapis.com/css?family=Roboto');
 
+.news-slider {
+    position: absolute;
+    bottom: 20px;
+    left: 10%;
+    z-index: 99;
+    padding-right: 30%;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 800;
+    font-size: 2.1rem;
+    line-height: 2.1rem;
+}
+
+.news-hgrande {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    padding: 5px;
+    font-size: 1.8rem;
+    line-height: 1.8rem;
+}
+
 .news {
     padding: 5px;
     font-family: 'Roboto', sans-serif;
-    font-weight: 700;
+    font-weight: 400;
     font-size: 1.1rem;
+    line-height: 1.1rem;
+}
+
+.news-h {
+    padding: 5px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 1rem;
+}
+
+.news-text {
+    padding-left: 15px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 200;
+    font-size: 1rem;
+    line-height: 1.1rem;
 }
 
 .newscard {
@@ -35,3 +73,45 @@ and (min-width : 1200px) {
 .hnewscard {
     max-height: 80px;
 }
+
+/* Gradient color1 - color2 - color1 */
+hr.style-one {
+    border: 0;
+    height: 1px;
+    background: #f4f4f4;
+    background-image: linear-gradient(to right, #f4f4f4, #ccc, #f4f4f4);
+  }
+
+  /* Posicionamentos nos cantos */
+
+  .nocanto1 {
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    z-index: 99;
+  }
+
+  .nocanto2 {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    z-index: 99;
+  }
+
+  .nocanto3 {
+    position: absolute;
+    bottom: 5px;
+    left: 5px;
+    z-index: 99;
+  }
+
+  .nocanto4 {
+    position: absolute;
+    bottom: 5px;
+    right: 5px;
+    z-index: 99;
+  }
+  .no-padding {
+    padding: 0!important;
+    margin: 0!important;
+  }

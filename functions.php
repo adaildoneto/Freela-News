@@ -23,6 +23,7 @@ if ( ! isset( $content_width ) ) {
 add_image_size( "slider", 600, 400, array ( 'center', 'top' ) );
 add_image_size( "cardnews", 280, 120, array ( 'center', 'top' ) );
 add_image_size( "quadrado", 80, 80, array ( 'center', 'top' ) );
+add_image_size( "big-quadrado", 200, 180, array ( 'center', 'top' ) );
 /**
  * Odin Classes.
  */
@@ -330,4 +331,18 @@ if ( is_woocommerce_activated() ) {
 	require get_template_directory() . '/inc/woocommerce/hooks.php';
 	require get_template_directory() . '/inc/woocommerce/functions.php';
 	require get_template_directory() . '/inc/woocommerce/template-tags.php';
+}
+
+
+//Limitar con la funcion get_the_excerpt
+function excerpt($limit) {
+  $excerpt = explode(' ', get_the_excerpt(), $limit);
+  if (count($excerpt)>=$limit) {
+  array_pop($excerpt);
+  $excerpt = implode(" ",$excerpt).'...';
+  } else {
+  $excerpt = implode(" ",$excerpt);
+  }
+  $excerpt = preg_replace('`[[^]]*]`','',$excerpt);
+  return $excerpt;
 }
