@@ -1,0 +1,125 @@
+<div class="col s12 m12 l6">
+  <div class="sl1der">
+              <?php
+
+                $myargs = array (
+                  'pagination'             => false,
+                  'cat'							   			=> 2,
+                  'posts_per_page'         => 6,
+                  'ignore_sticky_posts'    => true,
+
+                );
+                // The Query
+                $myquery = new WP_Query( $myargs );
+
+                // The Loop
+                while ( $myquery->have_posts() ) {
+
+                    $myquery->the_post();
+
+
+                    echo ('<div>');
+                    get_template_part( 'slider', '' );
+                    echo ('</div>');
+
+                          wp_reset_postdata();
+
+                  }
+
+                ?>
+  </div>
+
+  <?php
+
+    $myargs = array (
+      'pagination'             => false,
+      'cat'							   			=> 2,
+      'posts_per_page'         => 2,
+      'ignore_sticky_posts'    => true,
+
+    );
+    // The Query
+    $myquery = new WP_Query( $myargs );
+
+    // The Loop
+    while ( $myquery->have_posts() ) {
+
+        $myquery->the_post();
+
+
+    echo ('<div>');
+        get_template_part( 'cardnews', 'hgrande' );
+        echo ('</div>');
+
+
+              wp_reset_postdata();
+
+      }
+
+    ?>
+
+</div>
+
+
+
+<div class="col S12 m12 l3">
+
+		<?php
+
+			$myargs = array (
+				'pagination'             => false,
+				'cat'							   			=> 2,
+				'posts_per_page'         => 5,
+				'ignore_sticky_posts'    => true,
+
+			);
+			// The Query
+			$myquery = new WP_Query( $myargs );
+
+			// The Loop
+			while ( $myquery->have_posts() ) {
+
+					$myquery->the_post();
+
+
+
+					get_template_part( 'cardnews', '' );
+
+
+								wp_reset_postdata();
+
+				}
+
+			?>
+	</div>
+
+	<div class="col S12 m12 l3">
+
+		<?php
+
+			$myargs = array (
+				'pagination'             => false,
+				'cat'							   			=> 2,
+				'posts_per_page'         => 8,
+				'ignore_sticky_posts'    => true,
+
+			);
+			// The Query
+			$myquery = new WP_Query( $myargs );
+
+			// The Loop
+			while ( $myquery->have_posts() ) {
+
+					$myquery->the_post();
+
+
+
+					get_template_part( 'cardnews', 'horizontal' );
+
+
+								wp_reset_postdata();
+
+				}
+
+			?>
+	</div>

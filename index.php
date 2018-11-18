@@ -14,137 +14,31 @@
  */
 
 get_header(); ?>
-
-<div class="row">
-
-	<div class="col S12 m12 l6">
-		<div class="row no-padding">
-								<div id="slider">
-												<?php
-
-													$myargs = array (
-														'pagination'             => false,
-														'cat'							   			=> 2,
-														'posts_per_page'         => 6,
-														'ignore_sticky_posts'    => true,
-
-													);
-													// The Query
-													$myquery = new WP_Query( $myargs );
-
-													// The Loop
-													while ( $myquery->have_posts() ) {
-
-															$myquery->the_post();
-
-
-
-															get_template_part( 'slider', '' );
-
-
-																		wp_reset_postdata();
-
-														}
-
-													?>
-						</div>
-		</div>
-
-		<?php
-
-			$myargs = array (
-				'pagination'             => false,
-				'cat'							   			=> 2,
-				'posts_per_page'         => 2,
-				'ignore_sticky_posts'    => true,
-
-			);
-			// The Query
-			$myquery = new WP_Query( $myargs );
-
-			// The Loop
-			while ( $myquery->have_posts() ) {
-
-					$myquery->the_post();
-
-
-
-					get_template_part( 'cardnews', 'hgrande' );
-
-
-								wp_reset_postdata();
-
-				}
-
-			?>
-
-	</div>
-
-	<div class="col S12 m12 l3">
-
-		<?php
-
-			$myargs = array (
-				'pagination'             => false,
-				'cat'							   			=> 2,
-				'posts_per_page'         => 5,
-				'ignore_sticky_posts'    => true,
-
-			);
-			// The Query
-			$myquery = new WP_Query( $myargs );
-
-			// The Loop
-			while ( $myquery->have_posts() ) {
-
-					$myquery->the_post();
-
-
-
-					get_template_part( 'cardnews', '' );
-
-
-								wp_reset_postdata();
-
-				}
-
-			?>
-	</div>
-
-	<div class="col S12 m12 l3">
-
-		<?php
-
-			$myargs = array (
-				'pagination'             => false,
-				'cat'							   			=> 2,
-				'posts_per_page'         => 8,
-				'ignore_sticky_posts'    => true,
-
-			);
-			// The Query
-			$myquery = new WP_Query( $myargs );
-
-			// The Loop
-			while ( $myquery->have_posts() ) {
-
-					$myquery->the_post();
-
-
-
-					get_template_part( 'cardnews', 'horizontal' );
-
-
-								wp_reset_postdata();
-
-				}
-
-			?>
+<div class="container">
+	<div class="row">
+			<?php include(TEMPLATEPATH.'/mod-noticias-capa.php');?>
 	</div>
 
 </div>
 
+<div class="divider">
 
+</div>
+<div class="container">
+	<div class="row">
+		<?php include(TEMPLATEPATH.'/mod-noticias-linha.php');?>
+	</div>
 
+</div>
+
+<div class="divider">
+
+</div>
+<div class="container">
+	<div class="row">
+
+<?php include(TEMPLATEPATH.'/mod-noticias-capa2.php');?>
+</div>
+</div>
 <?php
 get_footer();

@@ -1,24 +1,75 @@
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen and (min-width : 320px) {
+/* Styles */
+    .container  {
+      width: 310px;
+    }
+
+    .slider-post {
+      height: 280px;
+      width: 300px;
+    }
+
+    .hgrande {
+      width: 300px!important;
+    }
+
+    .news-slider {
+        padding-right: 10%;
+        font-weight: 600;
+        font-size: 1.5rem;
+        line-height: 1.5rem;
+    }
+
+    .news-hgrande {
+        font-size: 1.3rem;
+        line-height: 1.2rem;
+    }
+
+}
+
+
+
 /* Desktops and laptops ----------- */
 @media only screen
-and (min-width : 992px) {
+and (min-width : 1024px) {
     .container  {
       width: 980px;
     }
+
+    .slider-post {
+      height: 280px;
+      width: 460px;
+    }
+
 }
 
 /* Large screens ----------- */
 @media only screen
-and (min-width : 1200px) {
+and (min-width : 1280px) {
       .container  {
         width: 1180px;
       }
+      .slider-post {
+        height: 320px;
+        width: 575px;
+      }
+
+      .news-slider {
+          padding-right: 10%;
+          font-weight: 800;
+          font-size: 2.1rem;
+          line-height: 2.1rem;
+      }
+
+      .news-hgrande {
+          font-size: 1.8rem;
+          line-height: 1.8rem;
+      }
+
 }
 
 
-.slider-post {
-  height: 320px;
-  width: 575px;
-}
 
 @import url('https://fonts.googleapis.com/css?family=Roboto');
 
@@ -27,35 +78,30 @@ and (min-width : 1200px) {
     bottom: 20px;
     left: 10%;
     z-index: 99;
-    padding-right: 30%;
+    padding-right: 10%;
     font-family: 'Roboto', sans-serif;
-    font-weight: 800;
-    font-size: 2.1rem;
-    line-height: 2.1rem;
 }
 
 .news-hgrande {
     font-family: 'Roboto', sans-serif;
     font-weight: 400;
     padding: 5px;
-    font-size: 1.8rem;
-    line-height: 1.8rem;
 }
 
 .news {
-    padding: 5px;
+    padding: 15px;
     font-family: 'Roboto', sans-serif;
-    font-weight: 400;
-    font-size: 1.1rem;
-    line-height: 1.1rem;
+    font-weight: 500;
+    font-size: 1.6rem;
+    line-height: 1.7rem;
 }
 
 .news-h {
-    padding: 5px;
+    padding-left: 15px;
     font-family: 'Roboto', sans-serif;
     font-weight: 400;
-    font-size: 1rem;
-    line-height: 1rem;
+    font-size: 1.3rem;
+    line-height: 1.4rem;
 }
 
 .news-text {
@@ -110,8 +156,4 @@ hr.style-one {
     bottom: 5px;
     right: 5px;
     z-index: 99;
-  }
-  .no-padding {
-    padding: 0!important;
-    margin: 0!important;
   }
