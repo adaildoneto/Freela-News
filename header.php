@@ -60,11 +60,11 @@
 
 						</div>
 
-							<div class="col l2">
+							<div class="col l2 right-align">
+									<i class="fab fa-facebook-square"></i>
+									<i class="fab fa-twitter-square"></i>
+									<i class="fas fa-search"></i>
 
-									<i class="material-icons right">add</i>
-									<i class="material-icons right">power</i>
-									<i class="material-icons right">person</i>
 
 
 							</div>

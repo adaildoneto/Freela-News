@@ -231,6 +231,7 @@ function odin_enqueue_scripts() {
 	wp_enqueue_style ('Stylecss', $template_url . '/css/style.css', null, 'all');
 	wp_enqueue_style ('slickCSS', $template_url . '/slick/slick.css');
 	wp_enqueue_style ('slickThemeCSS', $template_url . '/slick/slick-theme.css');
+		wp_enqueue_style ('FontAwesome 5.0', $template_url . '/fontawesome/css/all.css');
 
 
 //	wp_enqueue_script ('MaterializeJS', $template_url . '/js/materialize.min.js', array( '' ), null, 'all');
