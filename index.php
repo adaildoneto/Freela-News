@@ -24,12 +24,15 @@ get_header(); ?>
 <div class="divider">
 
 </div>
-<div class="container">
-	<div class="row">
-		<?php include(TEMPLATEPATH.'/mod-noticias-linha.php');?>
-	</div>
+<div class="row grey lighten-4">
+	<div class="container">
+		<div class="row">
+			<?php include(TEMPLATEPATH.'/mod-noticias-linha.php');?>
+		</div>
 
+	</div>
 </div>
+
 
 <div class="divider">
 

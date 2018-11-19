@@ -1,6 +1,6 @@
 
   <a href="<?php the_Permalink()?>" title="<?php the_title();?>" >
-        <div class="card horizontal z-depth-0">
+        <div class="card transparent horizontal z-depth-0">
           <div class="nocanto1">
             <?php $categories = get_the_category();
                 if ( ! empty( $categories ) ) {
