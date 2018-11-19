@@ -17,4 +17,3 @@
         </div>
       </div>
     </a>
-    <hr class="grey-text text-lighten-4 style-one">
