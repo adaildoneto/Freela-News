@@ -27,7 +27,7 @@
 
 <body>
 	<div id="blue">
-		<nav class="nav-extended blue-grey" >
+		<nav class="nav-extended" style="background: linear-gradient(60deg, #78909c 0%, #37474f 100%);" >
 
 			<div class="container">
 				<div class="row">
@@ -48,12 +48,13 @@
 								<div class="nav-content">
 									<a class="brand-logo center" href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home">
 										<?php bloginfo( 'name' ); ?>
-									</a>
+									</a></br>
+									<h6 class="center">
+										<?php bloginfo( 'description' ); ?>
+									</h6>
 								</div>
 
-								<div class="nav-content center">
-									<?php bloginfo( 'description' ); ?>
-								</div>
+
 
 							<?php endif ?>
 

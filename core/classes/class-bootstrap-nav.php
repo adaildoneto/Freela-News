@@ -21,7 +21,7 @@ class Odin_Bootstrap_Nav_Walker extends Walker_Nav_Menu {
 	 */
 	public function start_lvl( &$output, $depth = 0, $args = array() ) {
 		$indent = str_repeat( "\t", $depth );
-		$output .= "\n$indent<ul role=\"menu\" class=\" dropdown-menu\">\n";
+		$output .= "\n$indent<ul id=\"dropdown\" role=\"menu\" class=\" dropdown-content\">\n";
 	}
 
 	/**
@@ -84,7 +84,7 @@ class Odin_Bootstrap_Nav_Walker extends Walker_Nav_Menu {
 			// If item has_children add atts to a.
 			if ( $args->has_children && $depth === 0) {
 				$atts['href']        = '#';
-				$atts['data-toggle'] = 'dropdown';
+				$atts['data-target'] = 'dropdown';
 				$atts['class']       = 'dropdown-toggle';
 			} else {
 				$atts['href'] = ! empty( $item->url ) ? $item->url : '';

@@ -39,3 +39,9 @@ jQuery(document).ready(function ($) {
   // FIM Slick Slider
 
 });
+jQuery(document).ready(function ($) {
+  $('.dropdown-toggle').dropdown( {
+    constrainWidth : false,
+    coverTrigger   : false,
+   });
+});
