@@ -27,32 +27,37 @@
 
 <body>
 	<div id="blue">
-		<nav class="nav-extended" style="background: linear-gradient(60deg, #78909c 0%, #37474f 100%);" >
+		<nav class="nav-extended" style="background: linear-gradient(180deg, #78909c 0%, #37474f 100%);" >
 
 			<div class="container">
 				<div class="row">
 					<div class="col l1">
-						<div class="nav-content left">
-									<i class="material-icons">menu</i>
-						</div>
+
+								<i class="fas fa-bars"></i>
+
 					</div>
 
 						<div class="col l9">
 
 							<?php if (has_custom_logo() ): ?>
 
-							 <div class="nav-content center">
+							 <div class="nav-wrapper">
 									<?php odin_the_custom_logo();?>
 							</div>
 							<?php else : ?>
-								<div class="nav-content">
-									<a class="brand-logo center" href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home">
-										<?php bloginfo( 'name' ); ?>
-									</a></br>
-									<h6 class="center">
-										<?php bloginfo( 'description' ); ?>
-									</h6>
-								</div>
+
+<div class="nav-wrapper center-align">
+
+	<a class="brand-logo" href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home">
+			<i class="far fa-newspaper"></i>	<?php bloginfo( 'name' ); ?>
+	</a></br>
+	<h6 class="center">
+		<?php bloginfo( 'description' ); ?>
+	</h6>
+</div>
+
+
+
 
 
 
@@ -72,17 +77,12 @@
 
 					<div class="col s12 l9 hide-on-med-and-down">
 							 <?php
-								 wp_nav_menu(
-									 array(
-										 'theme_location' => 'main-menu',
-										 'depth'          => 2,
-										 'container'      => false,
-										 'menu_class'     => 'left',
-										 'menu_id'				=> 'sidenav',
-										 'fallback_cb'    => 'Odin_Bootstrap_Nav_Walker::fallback',
-										 'walker'         => new Odin_Bootstrap_Nav_Walker()
-									 )
-								 );
+														 wp_nav_menu( array(
+								 'theme_location'    => 'main-menu',
+								 'menu_id'           => 'primary-menu',
+								 'menu_class' 	    => 'left hide-on-med-and-down',
+								 'walker'		    =>	new Materialize_Walker_Nav_Menu(),
+							 ) );
 							 ?>
 
 					 </div>

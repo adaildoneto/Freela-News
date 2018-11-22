@@ -27,7 +27,7 @@ add_image_size( "big-quadrado", 200, 180, array ( 'center', 'top' ) );
 /**
  * Odin Classes.
  */
-require_once get_template_directory() . '/core/classes/class-bootstrap-nav.php';
+//require_once get_template_directory() . '/core/classes/class-bootstrap-nav.php';
 require_once get_template_directory() . '/core/classes/class-shortcodes.php';
 //require_once get_template_directory() . '/core/classes/class-shortcodes-menu.php';
 require_once get_template_directory() . '/core/classes/class-thumbnail-resizer.php';
@@ -42,6 +42,14 @@ require_once get_template_directory() . '/core/classes/class-thumbnail-resizer.p
 // require_once get_template_directory() . '/core/classes/class-user-meta.php';
 // require_once get_template_directory() . '/core/classes/class-post-status.php';
 //require_once get_template_directory() . '/core/classes/class-term-meta.php';
+
+
+
+// Require Materialize Custom Nav Walker Class
+require get_template_directory() . '/core/classes/class-materialize-navwalker.php';
+
+
+  
 
 /**
  * Odin Widgets.
