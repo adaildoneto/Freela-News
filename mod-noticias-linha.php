@@ -1,9 +1,3 @@
-<div class="center-align">
-
-	<a class="brand-logo" href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home">
-			<i class="far fa-newspaper"></i>	<?php bloginfo( 'name' ); ?>
-	</a></br>
-</div>
 <div class="row">
   <div class="col s12 m6 l6">
     <?php
@@ -98,3 +92,7 @@
 
 
 </div>
+
+<div class="row">
+			<?php if ( dynamic_sidebar('publicidade') ) : else : endif; ?>
+		</div>

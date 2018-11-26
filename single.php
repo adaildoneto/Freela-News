@@ -9,7 +9,7 @@
 get_header(); ?>
 <div class="container">
 			<div class="row">
-				<main id="content" class="<?php echo odin_classes_page_sidebar(); ?>" tabindex="-1" role="main">
+				<div id="content" class="col s12 l8 offset-l2 card" role="main">
 					<?php
 						// Start the Loop.
 						while ( have_posts() ) : the_post();
@@ -27,10 +27,8 @@ get_header(); ?>
 							endif;
 						endwhile;
 					?>
-				</main><!-- #main -->
+				</div><!-- #main -->
 
-				<?php
-				get_sidebar(); ?>
 			</div>
 
 </div>

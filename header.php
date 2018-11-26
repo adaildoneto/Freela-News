@@ -26,18 +26,18 @@
 </head>
 
 <body>
-	<div id="blue">
+	<div class="float-panel" data-top="0" data-scroll="200">
 		<nav class="nav-extended" style="background: linear-gradient(180deg, #78909c 0%, #37474f 100%);" >
 
 			<div class="container">
 				<div class="row">
-					<div class="col l1">
+					<div class="col s1 m1 l1">
+	<a href="#" data-target="mobile-menu" class="sidenav-trigger show-on-large">	<i class="fas fa-bars"></i></a>
 
-								<i class="fas fa-bars"></i>
 
 					</div>
 
-						<div class="col l9">
+						<div class="col s11 m9 l9">
 
 							<?php if (has_custom_logo() ): ?>
 
@@ -48,12 +48,10 @@
 
 <div class="nav-wrapper center-align">
 
-	<a class="brand-logo" href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home">
+	<a class="logomarca" href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home">
 			<i class="far fa-newspaper"></i>	<?php bloginfo( 'name' ); ?>
-	</a></br>
-	<h6 class="center">
-		<?php bloginfo( 'description' ); ?>
-	</h6>
+	</a>
+
 </div>
 
 
@@ -65,7 +63,7 @@
 
 						</div>
 
-							<div class="col l2 right-align">
+							<div class="col m2 l2 right-align hide-on-small-only">
 									<i class="fab fa-facebook-square"></i>
 									<i class="fab fa-twitter-square"></i>
 									<i class="fas fa-search"></i>
@@ -75,20 +73,22 @@
 							</div>
 
 
-					<div class="col s12 l9 hide-on-med-and-down">
+					<div class="col s12 l9 hide-on-med-and-down esconder">
 							 <?php
 														 wp_nav_menu( array(
 								 'theme_location'    => 'main-menu',
 								 'menu_id'           => 'primary-menu',
 								 'menu_class' 	    => 'left hide-on-med-and-down',
+								 'container'				=> 'ul',
+								 'container_class'	=>	'',
 								 'walker'		    =>	new Materialize_Walker_Nav_Menu(),
 							 ) );
 							 ?>
 
 					 </div>
 
-					 <div class="col s12 l3 right">
-						<div class="nav-wrapper blue-grey darken-1">
+					 <div class="col s12 l3 right esconder">
+						<div class="nav-wrapper blue-grey darken-1 hide-on-small-only">
 									<form>
 										<div class="input-field">
 										 <input id="search" type="search" value="<?php echo get_search_query(); ?>" name="s"/>
@@ -105,3 +105,13 @@
 	</nav>
 
 	</div>
+	<?php 	 wp_nav_menu( array(
+				 'menu'              => 'main-menu',
+				 'menu_id' 			=> 'mobile-menu',
+				 'theme_location'    => 'main-menu',
+				 'depth'             =>  2,
+				 'container'			=> 'ul',
+				 'menu_class' 		=> 'sidenav',
+				 'walker'			=>	new Materialize_Walker_Nav_Menu(),
+		 ));
+		 ?>

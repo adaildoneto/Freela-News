@@ -14,6 +14,36 @@
  */
 
 get_header(); ?>
+
+<div class="row" style="margin-top: -20px;">
+	<?php
+
+		$myargs = array (
+			'pagination'             => false,
+			'cat'							   			=> array(2),
+			'posts_per_page'         => 1,
+			'offset'									=> 1,
+			'ignore_sticky_posts'    => true,
+
+		);
+		// The Query
+		$myquery = new WP_Query( $myargs );
+
+		// The Loop
+		while ( $myquery->have_posts() ) {
+
+				$myquery->the_post();
+
+				get_template_part( 'especial', '' );
+
+							wp_reset_postdata();
+
+			}
+
+		?>
+</div>
+
+
 <div class="container">
 	<div class="row">
 			<?php include(TEMPLATEPATH.'/mod-noticias-capa.php');?>
@@ -32,16 +62,22 @@ get_header(); ?>
 
 	</div>
 </div>
+<div class="row grey" style="margin-top: -20px;">
+
+<?php include(TEMPLATEPATH.'/mod-noticias-capa3.php');?>
+</div>
 
 
 <div class="divider">
 
 </div>
-<div class="container">
-	<div class="row">
+<div class="row">
+
 
 <?php include(TEMPLATEPATH.'/mod-noticias-capa2.php');?>
+
 </div>
-</div>
+
+
 <?php
 get_footer();

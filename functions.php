@@ -49,7 +49,7 @@ require_once get_template_directory() . '/core/classes/class-thumbnail-resizer.p
 require get_template_directory() . '/core/classes/class-materialize-navwalker.php';
 
 
-  
+
 
 /**
  * Odin Widgets.
@@ -208,6 +208,28 @@ function odin_widgets_init() {
 			'after_title' => '</h3>',
 		)
 	);
+	register_sidebar(
+	array(
+		'name' => __( 'Publicidade', 'odin' ),
+		'id' => 'publicidade',
+		'description' => __( 'Publicidade', 'odin' ),
+		'before_widget' => '<div id="%1$s" class="col s12 widget %2$s">',
+		'after_widget' => '</div>',
+		'before_title' => '<h6 class="wtitle">',
+		'after_title' => '</h6><hr class="style-one">',
+	)
+);
+register_sidebar(
+array(
+	'name' => __( 'Publicidade Vertical', 'odin' ),
+	'id' => 'vpublicidade',
+	'description' => __( 'Publicidade Vertical', 'odin' ),
+	'before_widget' => '<div id="%1$s" class="widget %2$s">',
+	'after_widget' => '</div>',
+	'before_title' => '<h6 class="wtitle grey-text text-darken-3">',
+	'after_title' => '</h6><hr class="style-one">',
+)
+);
 }
 
 add_action( 'widgets_init', 'odin_widgets_init' );
@@ -249,6 +271,7 @@ function odin_enqueue_scripts() {
 	//Carregando MaterializeJS
 	wp_enqueue_script ('MaterializeJS', $template_url . '/js/materialize.js');
 	wp_enqueue_script ('CustomJS', $template_url . '/js/custom.js');
+		wp_enqueue_script ('Float-PanelJS', $template_url . '/js/float-panel.js');
 
 	// Html5Shiv
 	wp_enqueue_script( 'html5shiv', $template_url . '/assets/js/html5.js' );

@@ -3,9 +3,11 @@ jQuery(document).ready(function ($) {
   dots: true,
   slidesToShow: 1,
   slidesToScroll: 1,
+  fade: true,
   speed: 1800,
+  infinite: true,
   autoplay: true,
-  autoplaySpeed: 10000,
+  autoplaySpeed: 6000,
   responsive: [
   {
   breakpoint: 1024,
@@ -43,5 +45,18 @@ jQuery(document).ready(function ($) {
 jQuery(document).ready(function($) {
     jQuery(".nav-item-dropdown-button").dropdown({constrainWidth: false, hover: false, coverTrigger:false,});
     jQuery(".side-menu-nav-item-dropdown-button").dropdown({constrainWidth: false, hover: false,});
-    jQuery(".button-collapse").sideNav();
+    jQuery(".sidenav").sidenav();
+    jQuery(".parallax").parallax();
+});
+
+jQuery(document).ready(function($) {
+var header = $(".float-panel");
+  $(window).scroll(function() {
+    var scroll = $(window).scrollTop();
+       if (scroll >= 150) {
+           $('.esconder').hide();
+        } else {
+            $('.esconder').show();
+        }
+});
 });
