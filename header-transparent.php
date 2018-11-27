@@ -26,8 +26,9 @@
 </head>
 
 <body>
-	<div class="float-panel" data-top="0" data-scroll="200">
-		<nav class="nav-extended" style="background: linear-gradient(180deg, #78909c 0%, #37474f 100%);" >
+	<div class="float-panel" data-top="0" data-scroll="400">
+
+		<nav class="nav-extended z-depth-0 transparente" style="background: linear-gradient(to bottom, rgba(0,0,0,0.65) 0%,rgba(0,0,0,0.65) 35%,rgba(0,0,0,0) 100%);" >
 
 			<div class="container">
 				<div class="row">

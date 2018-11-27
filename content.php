@@ -9,13 +9,29 @@
  */
 ?>
 
+<?php $image = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), '' );?>
+<div class="row">
+
+<div class="container intro-container" style="background: linear-gradient(to bottom, rgba(0,0,0,0) 0%,rgba(0,0,0,0) 52%,rgba(0,0,0,0.65) 84%,rgba(0,0,0,0.65) 100%), url('<?php echo $image[0]; ?>'); background-position: center; background-size: cover; margin-top: -160px">
+</div>
+
+<div class="embassada" style="background: linear-gradient(to bottom, rgba(0,0,0,0) 0%,rgba(0,0,0,0) 52%,rgba(0,0,0,0.65) 84%,rgba(0,0,0,0.65) 100%), url('<?php echo $image[0]; ?>'); background-position: center; background-size: cover; filter: grayscale(100%) blur(5px);">
+</div>
+
+</div>
+
+<div class="container" style="margin-top:-150px;">
+			<div class="row">
+				<div id="content" class="col s12 l8 offset-l2 card" role="main" >
+
+
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 	<header class="entry-header">
 		<?php
 			if ( is_single() ) :
-				the_title( '<h1 class="entry-title">', '</h1>' );
+				the_title( '<h1 class="entry-title titulo-post">', '</h1>' );
 			else :
-				the_title( '<h2 class="entry-title"><a href="' . esc_url( get_permalink() ) . '" rel="bookmark">', '</a></h2>' );
+				the_title( '<h2 class="entry-title titulo-post"><a href="' . esc_url( get_permalink() ) . '" rel="bookmark">', '</a></h2>' );
 			endif;
 		?>
 
@@ -54,3 +70,6 @@
 		<?php endif; ?>
 	</footer>
 </article><!-- #post-## -->
+</div>
+</div>
+</div>

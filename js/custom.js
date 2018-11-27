@@ -47,16 +47,23 @@ jQuery(document).ready(function($) {
     jQuery(".side-menu-nav-item-dropdown-button").dropdown({constrainWidth: false, hover: false,});
     jQuery(".sidenav").sidenav();
     jQuery(".parallax").parallax();
+    jQuery(".modal").modal();
+    jQuery(".wp-caption").width('auto').height('auto');
+    jQuery(".wp-caption-text").width('auto').height('auto');
+    jQuery(".wp-caption .aligncenter").addClass('alignleft');
+
 });
 
 jQuery(document).ready(function($) {
 var header = $(".float-panel");
   $(window).scroll(function() {
     var scroll = $(window).scrollTop();
-       if (scroll >= 150) {
+       if (scroll >= 350) {
            $('.esconder').hide();
+            $('.transparente').addClass('grey darken-3');
         } else {
             $('.esconder').show();
+              $('.transparente').removeClass('grey darken-3');
         }
 });
 });

@@ -5,7 +5,7 @@
 
                   $myargs = array (
                     'pagination'             => false,
-                    'cat'							   			=> array(2,7),
+                    'cat'							   			=> array(22),
                     'posts_per_page'         => 6,
                     'ignore_sticky_posts'    => true,
 
@@ -37,7 +37,7 @@
 
     $myargs = array (
       'pagination'             => false,
-      'cat'							   			=> array(2,7),
+      'cat'							   			=> array(44),
       'posts_per_page'         => 2,
       'ignore_sticky_posts'    => true,
 
@@ -72,7 +72,7 @@
 
 			$myargs = array (
 				'pagination'             => false,
-				'cat'							   			=> array(2,7),
+				'cat'							   			=> array(33,22),
 				'posts_per_page'         => 4,
 				'ignore_sticky_posts'    => true,
 
@@ -109,7 +109,7 @@
 
 			$myargs = array (
 				'pagination'             => false,
-				'cat'							   			=> array(2,7),
+				'cat'							   			=> array(28),
 				'posts_per_page'         => 4,
 				'ignore_sticky_posts'    => true,
 

@@ -6,10 +6,8 @@
  * @since 2.2.0
  */
 
-get_header(); ?>
-<div class="container">
-			<div class="row">
-				<div id="content" class="col s12 l8 offset-l2 card" role="main">
+get_header('transparent'); ?>
+
 					<?php
 						// Start the Loop.
 						while ( have_posts() ) : the_post();

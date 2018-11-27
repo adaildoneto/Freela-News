@@ -15,12 +15,12 @@
 
 get_header(); ?>
 
-<div class="row" style="margin-top: -20px;">
+
 	<?php
 
 		$myargs = array (
 			'pagination'             => false,
-			'cat'							   			=> array(2),
+			'cat'							   			=> array(70),
 			'posts_per_page'         => 1,
 			'offset'									=> 1,
 			'ignore_sticky_posts'    => true,
@@ -50,6 +50,16 @@ get_header(); ?>
 	</div>
 
 </div>
+<div class="row">
+	<div class="container">
+		<div class="center-align titulo">
+			<h5>Notícas</h5> <hr class="style-one">
+
+		</div>
+
+	</div>
+
+</div>
 
 <div class="divider">
 
@@ -62,6 +72,17 @@ get_header(); ?>
 
 	</div>
 </div>
+
+<div class="row blue-grey darken-1" style="padding: 20px;">
+	<div class="container">
+		<div class="center-align titulo white-text">
+			<h5>Política</h5> <hr class="style-one">
+
+		</div>
+
+	</div>
+</div>
+
 <div class="row grey" style="margin-top: -20px;">
 
 <?php include(TEMPLATEPATH.'/mod-noticias-capa3.php');?>
