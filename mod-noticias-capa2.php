@@ -5,7 +5,7 @@
 
 			$myargs = array (
 				'pagination'             => false,
-				'cat'							   			=> array(70),
+				'category_name'					=> 'geral, economia',
 				'posts_per_page'         => 1,
 				'ignore_sticky_posts'    => true,
 
@@ -37,7 +37,7 @@
 
 			$myargs = array (
 				'pagination'             => false,
-				'cat'							   			=> array(148),
+				'category_name'					=> 'seguranca',
 				'posts_per_page'         => 5,
 				'ignore_sticky_posts'    => true,
 
@@ -71,7 +71,7 @@
 
 		$myargs = array (
 			'pagination'             => false,
-			'cat'							   			=> array(70),
+			'category_name'					 => 'meio-ambiente',
 			'offset'									=> 1,
 			'posts_per_page'         => 3,
 			'ignore_sticky_posts'    => true,

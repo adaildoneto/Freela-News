@@ -5,7 +5,7 @@
 
 			$myargs = array (
 				'pagination'             => false,
-				'cat'							   			=> array(22),
+				'category_name'					=> 'geral, educacao',
 				'posts_per_page'         => 3,
 				'ignore_sticky_posts'    => true,
 
@@ -37,7 +37,7 @@
 
 			$myargs = array (
 				'pagination'             => false,
-				'cat'							   			=> array(33),
+				'category_name'					=> 'saude',
 				'posts_per_page'         => 3,
 				'ignore_sticky_posts'    => true,
 
@@ -74,9 +74,9 @@
 
 			$myargs = array (
 				'pagination'             => false,
-				'cat'							   			=> array(70),
+				'category_name'					=> 'cultura',
 				'posts_per_page'         => 3,
-				 'offset'                  => 2,
+				 'offset'                  => 0,
 				'ignore_sticky_posts'    => true,
 
 			);

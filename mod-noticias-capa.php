@@ -5,7 +5,7 @@
 
                   $myargs = array (
                     'pagination'             => false,
-                    'cat'							   			=> array(22),
+                    'category_name'					 => 'governo',
                     'posts_per_page'         => 6,
                     'ignore_sticky_posts'    => true,
 
@@ -37,7 +37,7 @@
 
     $myargs = array (
       'pagination'             => false,
-      'cat'							   			=> array(44),
+      'category_name'					=> 'economia',
       'posts_per_page'         => 2,
       'ignore_sticky_posts'    => true,
 
@@ -72,7 +72,7 @@
 
 			$myargs = array (
 				'pagination'             => false,
-				'cat'							   			=> array(33,22),
+				'category_name'					=> 'saude',
 				'posts_per_page'         => 4,
 				'ignore_sticky_posts'    => true,
 
@@ -109,7 +109,7 @@
 
 			$myargs = array (
 				'pagination'             => false,
-				'cat'							   			=> array(28),
+				'category_name'					=> 'educacao',
 				'posts_per_page'         => 4,
 				'ignore_sticky_posts'    => true,
 

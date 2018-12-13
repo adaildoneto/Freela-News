@@ -6,7 +6,7 @@
 
       $myargs = array (
         'pagination'             => false,
-        'cat'							   			=> array(70),
+        'category_name'					=> 'saude, geral',
         'posts_per_page'         => 2,
         'ignore_sticky_posts'    => true,
 
@@ -35,7 +35,7 @@
 
         $myargs = array (
           'pagination'             => false,
-          'cat'							   			=> array(148),
+          'category_name'					=> 'economia',
           'posts_per_page'         => 1,
           'offset'                  => 2,
           'ignore_sticky_posts'    => true,
@@ -67,7 +67,7 @@
 
     $myargs = array (
       'pagination'             => false,
-      'cat'							   			=> array(28),
+      'cat'							   			=> 'turismo, cultura',
       'posts_per_page'         => 4,
         'offset'                  => 2,
       'ignore_sticky_posts'    => true,
