@@ -1,5 +1,5 @@
 <div class="container">
-	<div class="col S12 m12 l3">
+	<div class="col S12 m6 l3">
 
 		<?php
 
@@ -31,7 +31,7 @@
 
 			?>
 	</div>
-	<div class="col S12 m12 l3">
+	<div class="col S12 m6 l3">
 
 		<?php
 
@@ -63,12 +63,12 @@
 
 			?>
 	</div>
-	<div class="col S12 m12 l3">
+	<div class="col S12 m6 l3">
 
 		<?php if ( dynamic_sidebar('vpublicidade') ) : else : endif; ?>
 
 	</div>
-	<div class="col S12 m12 l3">
+	<div class="col S12 m6 l3">
 
 		<?php
 

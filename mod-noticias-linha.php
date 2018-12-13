@@ -1,5 +1,7 @@
 <div class="row">
-  <div class="col s12 m6 l6">
+<div class="col s12 m12 l6">
+
+
     <?php
 
       $myargs = array (
@@ -17,20 +19,18 @@
 
           $myquery->the_post();
 
-
-
+            echo ('<div class="col s12 ">');
           get_template_part( 'cardnews', 'hgrande' );
-
+              echo ('</div>')  ;
 
                 wp_reset_postdata();
 
         }
 
       ?>
-  </div>
 
-
-    <div class="col s12 m6 l6">
+</div>
+    <div class="col s12 m12 l6">
       <?php
 
         $myargs = array (
@@ -60,8 +60,8 @@
 
         ?>
     </div>
-
 </div>
+
 <div class="row">
   <?php
 
@@ -83,7 +83,7 @@
 
         echo ('<div class="col s12 m6 l3">');
 
-        get_template_part( 'cardnews', '' );
+        get_template_part( 'cardnews', 'destaque' );
 
         echo ('</div>')  ;
               wp_reset_postdata();

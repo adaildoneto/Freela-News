@@ -10,8 +10,8 @@
 
 get_header(); ?>
 
-	<main id="content" class="<?php echo odin_classes_page_sidebar(); ?>" tabindex="-1" role="main">
-
+<div class="row">
+		<div class="container">
 			<?php if ( have_posts() ) : ?>
 
 				<header class="page-header">
@@ -20,7 +20,6 @@ get_header(); ?>
 					the_archive_description( '<div class="taxonomy-description">', '</div>' );
 				?>
 				</header><!-- .page-header -->
-
 				<?php
 						// Start the Loop.
 						while ( have_posts() ) : the_post();
@@ -30,8 +29,9 @@ get_header(); ?>
 						 * use this in a child theme, then include a file called content-___.php
 						 * (where ___ is the post format) and that will be used instead.
 						 */
-						get_template_part( 'content', get_post_format() );
-
+						   echo ('<div class="col s12 m6 l3">');
+						get_template_part( 'cardnews', '' );
+							      echo ('</div>');
 						endwhile;
 
 						// Page navigation.
@@ -39,12 +39,19 @@ get_header(); ?>
 
 					else :
 						// If no content, include the "No posts found" template.
+
 						get_template_part( 'content', 'none' );
 
 				endif;
 			?>
-	</main><!-- #main -->
+
+			</div>
+
+		</div>
+
+</div>
+
 
 <?php
-get_sidebar();
+
 get_footer();

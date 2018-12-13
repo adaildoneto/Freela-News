@@ -25,7 +25,7 @@
 	<?php wp_head(); ?>
 </head>
 
-<body>
+<body class="blue-grey darken-4">
 	<div class="float-panel" data-top="0" data-scroll="400">
 
 		<nav class="nav-extended z-depth-0 transparente" style="background: linear-gradient(to bottom, rgba(0,0,0,0.65) 0%,rgba(0,0,0,0.65) 35%,rgba(0,0,0,0) 100%);" >

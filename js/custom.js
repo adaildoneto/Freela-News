@@ -51,6 +51,7 @@ jQuery(document).ready(function($) {
     jQuery(".wp-caption").width('auto').height('auto');
     jQuery(".wp-caption-text").width('auto').height('auto');
     jQuery(".wp-caption .aligncenter").addClass('alignleft');
+    jQuery(".collapsible").collapsible();
 
 });
 
