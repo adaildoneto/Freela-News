@@ -43,17 +43,17 @@ jQuery(document).ready(function ($) {
 });
 
 jQuery(document).ready(function($) {
-    jQuery(".nav-item-dropdown-button").dropdown({constrainWidth: false, hover: false, coverTrigger:false,});
-    jQuery(".side-menu-nav-item-dropdown-button").dropdown({constrainWidth: false, hover: false,});
-    jQuery(".sidenav").sidenav();
-    jQuery(".parallax").parallax();
-    jQuery(".modal").modal();
-    jQuery(".wp-caption").width('auto').height('auto');
-    jQuery(".wp-caption-text").width('auto').height('auto');
-    jQuery(".wp-caption .aligncenter").addClass('alignleft');
-    jQuery(".collapsible").collapsible();
-    jQuery('iframe[src*="youtube"]').parent().fitVids();
-    jQuery('iframe[src*="facebook"]').parent().fitVids();
+    $(".nav-item-dropdown-button").dropdown({constrainWidth: false, hover: false, coverTrigger:false,});
+    $(".side-menu-nav-item-dropdown-button").dropdown({constrainWidth: false, hover: false,});
+    $(".sidenav").sidenav();
+    $(".parallax").parallax();
+    $(".modal").modal();
+    $(".wp-caption").width('auto').height('auto');
+    $(".wp-caption-text").width('auto').height('auto');
+    $(".wp-caption .aligncenter").addClass('alignleft');
+    $(".collapsible").collapsible();
+    $("iframe[src*='youtube']").parent().fitVids();
+    $("iframe[src*='web.facebook']").parent().fitVids();
 });
 
 jQuery(document).ready(function($) {
