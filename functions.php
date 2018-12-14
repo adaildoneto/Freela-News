@@ -231,6 +231,28 @@ array(
 	'after_title' => '</h6><hr class="style-one">',
 )
 );
+register_sidebar(
+array(
+	'name' => __( 'Video em Destaque', 'odin' ),
+	'id' => 'video-destaque',
+	'description' => __( 'Video principal', 'odin' ),
+	'before_widget' => '<div id="%1$s" class="widget %2$s">',
+	'after_widget' => '</div>',
+	'before_title' => '<h6 class="wtitle grey-text text-darken-3">',
+	'after_title' => '</h6><hr class="style-one">',
+)
+);
+register_sidebar(
+array(
+	'name' => __( 'Canal do Youtube', 'odin' ),
+	'id' => 'video-lista',
+	'description' => __( 'Lista de Videos', 'odin' ),
+	'before_widget' => '<div id="%1$s" class="widget %2$s">',
+	'after_widget' => '</div>',
+	'before_title' => '<h6 class="wtitle grey-text text-darken-3">',
+	'after_title' => '</h6><hr class="style-one">',
+)
+);
 }
 
 add_action( 'widgets_init', 'odin_widgets_init' );

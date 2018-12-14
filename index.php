@@ -43,8 +43,8 @@ get_header(); ?>
 </div>
 
 
-<div class="container">
-	<div class="row">
+<div class="row">
+	<div class="container">
 			<?php include(TEMPLATEPATH.'/mod-noticias-capa.php');?>
 	</div>
 
@@ -52,10 +52,17 @@ get_header(); ?>
 <div class="row">
 	<div class="container">
 		<div class="center-align titulo">
-			<h5>Notícas</h5> <hr class="style-one">
+			<h5>Vídeos</h5> <hr class="style-one">
 
 		</div>
+		<div class="col s12 m8 l8">
 
+		        <?php if ( dynamic_sidebar('video-destaque') ) : else : endif; ?>
+
+		</div>
+		<div class="col s12 m4 l4">
+					 <?php if ( dynamic_sidebar('video-lista') ) : else : endif; ?>
+		</div>
 	</div>
 
 </div>
