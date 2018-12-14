@@ -49,7 +49,7 @@ get_header(); ?>
 	</div>
 
 </div>
-<div class="row tea darken-4">
+<div class="row teal darken-4">
 	<div class="container">
 		<div class="center-align titulo">
 			<h5 class="white-text">Vídeos</h5>
@@ -64,7 +64,7 @@ get_header(); ?>
 		</div>
 
 	</div>
-	<div class="container">
+	<div class="container" style="margin-top: 20px;">
 				 <?php if ( dynamic_sidebar('video-lista') ) : else : endif; ?>
 	</div>
 
