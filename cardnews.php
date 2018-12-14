@@ -9,7 +9,7 @@
 
         </div>
         <div class="card-image">
-                      <?php $image =  wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'card-news' );?>
+                      <?php $image =  wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'cardnews' );?>
           <img class="responsive-img" src="<?php echo $image[0]; ?>" >
 
             </div>
