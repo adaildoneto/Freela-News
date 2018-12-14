@@ -49,20 +49,23 @@ get_header(); ?>
 	</div>
 
 </div>
-<div class="row">
+<div class="row tea darken-4">
 	<div class="container">
 		<div class="center-align titulo">
-			<h5>Vídeos</h5> <hr class="style-one">
+			<h5 class="white-text">Vídeos</h5>
+			<div class="divider">
 
+			</div>
 		</div>
 		<div class="col s12 m12 l12">
 
 		        <?php if ( dynamic_sidebar('video-destaque') ) : else : endif; ?>
 
 		</div>
-		<div class="col s12 m12 l12">
-					 <?php if ( dynamic_sidebar('video-lista') ) : else : endif; ?>
-		</div>
+
+	</div>
+	<div class="container">
+				 <?php if ( dynamic_sidebar('video-lista') ) : else : endif; ?>
 	</div>
 
 </div>
