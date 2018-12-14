@@ -55,12 +55,12 @@ get_header(); ?>
 			<h5>Vídeos</h5> <hr class="style-one">
 
 		</div>
-		<div class="col s12 m8 l8">
+		<div class="col s12 m12 l12">
 
 		        <?php if ( dynamic_sidebar('video-destaque') ) : else : endif; ?>
 
 		</div>
-		<div class="col s12 m4 l4">
+		<div class="col s12 m12 l12">
 					 <?php if ( dynamic_sidebar('video-lista') ) : else : endif; ?>
 		</div>
 	</div>
