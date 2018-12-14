@@ -8,7 +8,7 @@
                 </div>
               </div>
               <div class="card-image">
-                <?php $image = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'quadrado' );?>
+                <?php $image = the_post_thumbnail( 'quadrado' );?>
                 <img class="responsive-img" src="<?php echo $image[0]; ?>" >
               </div>
             </div>

@@ -271,6 +271,7 @@ function odin_enqueue_scripts() {
 	wp_enqueue_script ('slickJS', $template_url . '/slick/slick.min.js');
 	//Carregando MaterializeJS
 	wp_enqueue_script ('MaterializeJS', $template_url . '/js/materialize.js');
+		wp_enqueue_script ('FitVids', $template_url . '/js/jquery.fitvids.js');
 	wp_enqueue_script ('CustomJS', $template_url . '/js/custom.js');
 		wp_enqueue_script ('Float-PanelJS', $template_url . '/js/float-panel.js');
 

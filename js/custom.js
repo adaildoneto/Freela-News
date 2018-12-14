@@ -52,7 +52,8 @@ jQuery(document).ready(function($) {
     jQuery(".wp-caption-text").width('auto').height('auto');
     jQuery(".wp-caption .aligncenter").addClass('alignleft');
     jQuery(".collapsible").collapsible();
-
+    jQuery('iframe[src*="youtube"]').parent().fitVids();
+    jQuery('iframe[src*="facebook"]').parent().fitVids();
 });
 
 jQuery(document).ready(function($) {
