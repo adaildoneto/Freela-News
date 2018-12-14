@@ -43,13 +43,13 @@ get_header(); ?>
 </div>
 
 
-<div class="row" style="padding: 20px;">
+<div class="row">
 	<div class="container">
 			<?php include(TEMPLATEPATH.'/mod-noticias-capa.php');?>
 	</div>
 
 </div>
-<div class="row grey darken-4">
+<div class="row grey darken-4"  style="padding: 20px;">
 	<div class="container">
 		<div class="center-align titulo">
 			<h5 class="white-text">Vídeos</h5>
@@ -64,7 +64,7 @@ get_header(); ?>
 		</div>
 
 	</div>
-	<div class="container" style="margin-top: 20px;">
+	<div class="container" style="padding: 20px;">
 				 <?php if ( dynamic_sidebar('video-lista') ) : else : endif; ?>
 	</div>
 
