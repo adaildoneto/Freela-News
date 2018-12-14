@@ -43,13 +43,13 @@ get_header(); ?>
 </div>
 
 
-<div class="row">
+<div class="row" style="padding: 20px;">
 	<div class="container">
 			<?php include(TEMPLATEPATH.'/mod-noticias-capa.php');?>
 	</div>
 
 </div>
-<div class="row teal darken-4">
+<div class="row grey darken-4">
 	<div class="container">
 		<div class="center-align titulo">
 			<h5 class="white-text">Vídeos</h5>
