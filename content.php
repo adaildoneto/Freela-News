@@ -49,8 +49,7 @@
 	<?php else : ?>
 		<div class="entry-content">
 			<?php
-				the_excerpt( __( 'Continue reading <span class="meta-nav">&rarr;</span>', 'odin' ) );
-				get_extended($content);
+			the_content( 'Continue Lendo..' );
 				wp_link_pages( array(
 					'before'      => '<div class="page-links"><span class="page-links-title">' . __( 'Pages:', 'odin' ) . '</span>',
 					'after'       => '</div>',
