@@ -42,7 +42,7 @@
 
 							<?php if (has_custom_logo() ): ?>
 
-							 <div class="nav-wrapper">
+							 <div class="nav-wrapper center-align">
 									<?php odin_the_custom_logo();?>
 							</div>
 							<?php else : ?>
