@@ -50,13 +50,16 @@
 		<div class="entry-content">
 			<?php
 			the_content( 'Continue Lendo..' );
-				wp_link_pages( array(
+			?>
+			<div class="card-action">
+				<?php wp_link_pages( array(
 					'before'      => '<div class="page-links"><span class="page-links-title">' . __( 'Pages:', 'odin' ) . '</span>',
 					'after'       => '</div>',
 					'link_before' => '<span>',
 					'link_after'  => '</span>',
 				) );
 			?>
+			</div>
 		</div><!-- .entry-content -->
 	<?php endif; ?>
 
