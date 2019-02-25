@@ -20,7 +20,7 @@ get_header(); ?>
 
 		$myargs = array (
 			'pagination'             => false,
-			'category_name'					=> 'geral',
+			'category_name'					=> 'ESPECIAL',
 			'posts_per_page'         => 1,
 			'ignore_sticky_posts'    => true,
 
