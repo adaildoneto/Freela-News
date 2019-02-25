@@ -17,7 +17,7 @@ get_header('transparent'); ?>
 							 * use this in a child theme, then include a file called content-___.php
 							 * (where ___ is the post format) and that will be used instead.
 							 */
-							 if ($has_thumbnail = 0) {
+							 if ($has_thumbnail = 1) {
 								 get_template_part( 'content', get_post_format() );
 
 							 } else {
