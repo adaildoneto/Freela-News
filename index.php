@@ -82,25 +82,6 @@ get_header(); ?>
 	</div>
 </div>
 
-<div class="row blue-grey darken-1" style="padding: 20px;">
-	<div class="container">
-		<div class="center-align titulo white-text">
-			<h5>Política</h5> <hr class="style-one">
-
-		</div>
-
-	</div>
-</div>
-
-<div class="row grey" style="margin-top: -20px;">
-
-<?php include(TEMPLATEPATH.'/mod-noticias-capa3.php');?>
-</div>
-
-
-<div class="divider">
-
-</div>
 <div class="row">
 
 
