@@ -23,7 +23,7 @@ get_header('transparent'); ?>
 							 } else {
 								 get_template_part( 'content', get_post_format() );
 
-
+							 	}
 													endwhile;
 					?>
 
