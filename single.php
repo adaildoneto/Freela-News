@@ -18,11 +18,9 @@ get_header('transparent'); ?>
 							 * (where ___ is the post format) and that will be used instead.
 							 */
 							   if( !empty( $has_thumbnail ) ) {
-								 get_template_part( 'content', get_post_format() );
-
-							 } else {
 								 	get_template_part( 'content', 'nomimage' );
-							 }
+							 } else {
+								 get_template_part( 'content', get_post_format() );
 
 
 													endwhile;
