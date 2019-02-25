@@ -1,5 +1,5 @@
-  <?php $image =  wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'big-quadrado' );?>
-  <?php if( !empty( $image ) ): ?>
+
+  <?php if( !empty( $has_thumbnail ) ): ?>
 <div class="card destaque-post teal darken-4">
 <?php else :?>
   <?php $image =  wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'big-quadrado' );?>
