@@ -30,12 +30,12 @@ get_header(); ?>
 						 * (where ___ is the post format) and that will be used instead.
 						 */
 						   echo ('<div class="col s12 m6 l3">');
-						get_template_part( 'cardnews', '' );
+						get_template_part( 'cardnews', 'destaque' );
 							      echo ('</div>');
 						endwhile;
 
 						// Page navigation.
-						odin_paging_nav();
+						wp_pagination();
 
 					else :
 						// If no content, include the "No posts found" template.
