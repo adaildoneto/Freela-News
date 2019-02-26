@@ -25,9 +25,9 @@
 	<?php wp_head(); ?>
 </head>
 
-<body>
+<body class="teal lighten-5">
 	<div class="float-panel" data-top="0" data-scroll="200">
-		<nav class="nav-extended" style="background: linear-gradient(180deg, #78909c 0%, #37474f 100%);" >
+		<nav class="nav-extended" style="background: linear-gradient(180deg, #00695c 0%, #004d40 100%);" >
 
 			<div class="container">
 				<div class="row">

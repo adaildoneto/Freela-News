@@ -12,7 +12,7 @@
 <?php $image = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), '' );?>
 <div class="row">
 
-<div class="container intro-container" style="background: linear-gradient(to bottom, rgba(0,0,0,0) 0%,rgba(0,0,0,0) 52%,rgba(0,0,0,0.65) 84%,rgba(0,0,0,0.65) 100%), url('<?php echo $image[0]; ?>'); background-position: center; background-size: cover; margin-top: -160px">
+<div class="container intro-container" style="background: linear-gradient(to bottom, rgba(0,0,0,0) 0%,rgba(0,0,0,0) 52%,rgba(0,0,0,0.65) 84%,rgba(0,0,0,0.65) 100%), url('<?php echo $image[0]; ?>'); background-position: center; background-size: cover; margin-top: -180px">
 </div>
 
 <div class="embassada" style="background: linear-gradient(to bottom, rgba(0,0,0,0) 0%,rgba(0,0,0,0) 52%,rgba(0,0,0,0.65) 84%,rgba(0,0,0,0.65) 100%), url('<?php echo $image[0]; ?>'); background-position: center; background-size: cover; filter: grayscale(100%) blur(5px);">
@@ -29,14 +29,14 @@
 	<header class="entry-header">
 		<?php
 			if ( is_single() ) :
-				the_title( '<h1 class="entry-title titulo-post">', '</h1>' );
+				the_title( '<div class="center-align"><h1 class="entry-title titulo-post">', '</h1></center>' );
 			else :
 				the_title( '<h2 class="entry-title titulo-post"><a href="' . esc_url( get_permalink() ) . '" rel="bookmark">', '</a></h2>' );
 			endif;
 		?>
 
 		<?php if ( 'post' == get_post_type() ) : ?>
-			<div class="entry-meta">
+			<div class="entry-meta center-align">
 				<?php odin_posted_on(); ?>
 			</div><!-- .entry-meta -->
 		<?php endif; ?>
