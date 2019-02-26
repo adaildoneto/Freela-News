@@ -5,7 +5,7 @@
 
                   $myargs = array (
                     'pagination'             => false,
-                    'category_name'					 => '',
+                    'category_name'					 => 'destaque',
                     'posts_per_page'         => 6,
                     'ignore_sticky_posts'    => true,
 
