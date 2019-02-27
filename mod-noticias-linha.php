@@ -117,7 +117,7 @@
     $myargs = array (
       'pagination'             => false,
     'category_name'					 => 'especial',
-      'posts_per_page'         => 4,
+      'posts_per_page'         => 2,
       'ignore_sticky_posts'    => true,
 
     );
@@ -129,9 +129,9 @@
 
         $myquery->the_post();
 
-        echo ('<div class="col s12 m6 l3">');
+        echo ('<div class="col s12 m6 l6">');
 
-        get_template_part( 'cardnews', '' );
+        get_template_part( 'slider', '' );
 
         echo ('</div>')  ;
               wp_reset_postdata();
@@ -201,9 +201,9 @@
 
         $myquery->the_post();
 
-        echo ('<div class="col s12 m6 l3">');
+        echo ('<div class="col s12 m6 l6">');
 
-        get_template_part( 'cardnews', '' );
+        get_template_part( 'cardnews', 'hgrande' );
 
         echo ('</div>')  ;
               wp_reset_postdata();
@@ -225,7 +225,7 @@
     $myargs = array (
       'pagination'             => false,
     'category_name'					 => 'politica',
-      'posts_per_page'         => 2,
+      'posts_per_page'         => 3,
       'ignore_sticky_posts'    => true,
 
     );
@@ -237,9 +237,9 @@
 
         $myquery->the_post();
 
-        echo ('<div class="col s12 m6 l6">');
+        echo ('<div class="col s12 m4 l4">');
 
-        get_template_part( 'cardnews', 'slider' );
+        get_template_part( 'slider', '' );
 
         echo ('</div>')  ;
               wp_reset_postdata();
@@ -261,7 +261,7 @@
     $myargs = array (
       'pagination'             => false,
     'category_name'					 => 'policia',
-      'posts_per_page'         => 4,
+      'posts_per_page'         => 3,
       'ignore_sticky_posts'    => true,
 
     );
@@ -273,7 +273,7 @@
 
         $myquery->the_post();
 
-        echo ('<div class="col s12 m6 l6">');
+        echo ('<div class="col s12 m4 l4">');
 
         get_template_part( 'cardnews', 'hgrande' );
 
@@ -333,7 +333,7 @@
     $myargs = array (
       'pagination'             => false,
     'category_name'					 => 'nacional',
-      'posts_per_page'         => 4,
+      'posts_per_page'         => 2,
       'ignore_sticky_posts'    => true,
 
     );
@@ -345,7 +345,7 @@
 
         $myquery->the_post();
 
-        echo ('<div class="col s12 m6 l3">');
+        echo ('<div class="col s12 m6 l6">');
 
         get_template_part( 'cardnews', 'hgrande' );
 
