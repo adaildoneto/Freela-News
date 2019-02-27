@@ -4,7 +4,7 @@
 
     $myargs = array (
       'pagination'             => false,
-      'cat'							   			=> 'polícia',
+      'cat'							   			=> 'POLICIA',
       'posts_per_page'         => 4,
         'offset'                  => ,
       'ignore_sticky_posts'    => true,
@@ -20,7 +20,7 @@
 
         echo ('<div class="col s12 m6 l3">');
 
-        get_template_part( 'cardnews', 'destaque' );
+        get_template_part( 'cardnews', '' );
 
         echo ('</div>')  ;
               wp_reset_postdata();
@@ -36,7 +36,7 @@
 
     $myargs = array (
       'pagination'             => false,
-      'cat'							   			=> 'política',
+      'cat'							   			=> 'POLITICA',
       'posts_per_page'         => 4,
         'offset'                  => ,
       'ignore_sticky_posts'    => true,
@@ -52,7 +52,7 @@
 
         echo ('<div class="col s12 m6 l3">');
 
-        get_template_part( 'cardnews', 'destaque' );
+        get_template_part( 'cardnews', '' );
 
         echo ('</div>')  ;
               wp_reset_postdata();
@@ -86,7 +86,7 @@
 
         echo ('<div class="col s12 m6 l3">');
 
-        get_template_part( 'cardnews', 'destaque' );
+        get_template_part( 'cardnews', '' );
 
         echo ('</div>')  ;
               wp_reset_postdata();
@@ -119,7 +119,7 @@
 
         echo ('<div class="col s12 m6 l3">');
 
-        get_template_part( 'cardnews', 'destaque' );
+        get_template_part( 'cardnews', '' );
 
         echo ('</div>')  ;
               wp_reset_postdata();
@@ -153,7 +153,7 @@
 
         echo ('<div class="col s12 m6 l3">');
 
-        get_template_part( 'cardnews', 'destaque' );
+        get_template_part( 'cardnews', '' );
 
         echo ('</div>')  ;
               wp_reset_postdata();
@@ -187,7 +187,7 @@
 
         echo ('<div class="col s12 m6 l3">');
 
-        get_template_part( 'cardnews', 'destaque' );
+        get_template_part( 'cardnews', '' );
 
         echo ('</div>')  ;
               wp_reset_postdata();
@@ -205,7 +205,7 @@
 
     $myargs = array (
       'pagination'             => false,
-      'cat'							   			=> 'EDUCAÇÃO',
+      'cat'							   			=> 'EDUCACAO',
       'posts_per_page'         => 4,
         'offset'                  => ,
       'ignore_sticky_posts'    => true,
@@ -221,7 +221,7 @@
 
         echo ('<div class="col s12 m6 l3">');
 
-        get_template_part( 'cardnews', 'destaque' );
+        get_template_part( 'cardnews', '' );
 
         echo ('</div>')  ;
               wp_reset_postdata();
@@ -239,7 +239,7 @@
 
     $myargs = array (
       'pagination'             => false,
-      'cat'							   			=> 'CULTURA',
+      'cat'							   			=> 'SAUDE',
       'posts_per_page'         => 4,
         'offset'                  => ,
       'ignore_sticky_posts'    => true,
@@ -255,7 +255,7 @@
 
         echo ('<div class="col s12 m6 l3">');
 
-        get_template_part( 'cardnews', 'destaque' );
+        get_template_part( 'cardnews', '' );
 
         echo ('</div>')  ;
               wp_reset_postdata();
