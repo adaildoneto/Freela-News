@@ -38,31 +38,24 @@
 
 		<?php if ( 'post' == get_post_type() ) : ?>
 			<div class="entry-meta center-align">
-				<?php odin_posted_on(); ?>
+				<?php odin_posted_on();
+				echo do_shortcode( '[ssba-buttons]' );
+				?>
 			</div><!-- .entry-meta -->
 		<?php endif; ?>
+
 	</header><!-- .entry-header -->
 
-	<?php if ( is_search() ) : ?>
-		<div class="entry-summary">
-			<?php the_excerpt(); ?>
-		</div><!-- .entry-summary -->
-	<?php else : ?>
+
 		<div class="entry-content">
 			<?php
 			the_content( 'Continue Lendo..' );
 			?>
 			<div class="card-action">
-				<?php wp_link_pages( array(
-					'before'      => '<div class="page-links"><span class="page-links-title">' . __( 'Pages:', 'odin' ) . '</span>',
-					'after'       => '</div>',
-					'link_before' => '<span>',
-					'link_after'  => '</span>',
-				) );
-			?>
+				<?php wp_pagination()?>
 			</div>
 		</div><!-- .entry-content -->
-	<?php endif; ?>
+
 
 	<footer class="entry-meta">
 		<?php if ( in_array( 'category', get_object_taxonomies( get_post_type() ) ) ) : ?>
