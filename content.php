@@ -47,7 +47,7 @@
 	</header><!-- .entry-header -->
 
 
-		<div class="entry-content">
+		<div id="post" class="entry-content">
 			<?php
 			the_content( 'Continue Lendo..' );
 			?>
