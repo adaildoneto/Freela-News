@@ -10,7 +10,6 @@
       'pagination'             => false,
       'cat'							   			=> 'SAUDE',
       'posts_per_page'         => 4,
-        'offset'                  => ,
       'ignore_sticky_posts'    => true,
 
     );
