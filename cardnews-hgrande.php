@@ -16,12 +16,12 @@
               <div class="card-stacked">
                 <?php $categories = get_the_category();
                     if ( ! empty( $categories ) ) {
-                        echo '<span class="new badge teal darken-4" data-badge-caption="'. esc_html( $categories[0]->name ) . '"></span>';
+                        echo '<span class="new badge teal darken-4 left" data-badge-caption="'. esc_html( $categories[0]->name ) . '"></span>';
                         }?>
-                <div class="news-hgrande blue-grey-text text-darken-4">
+                <div class="news-hgrande teal-text text-darken-4">
                   <?php the_title();?>
                       </div>
-                  <div class="news-text blue-grey-text hide-on-med-and-down">
+                  <div class="news-text teal-text text-darken-4 hide-on-med-and-down">
                   <?php echo excerpt('30'); ?>
                   </div>
               </div>

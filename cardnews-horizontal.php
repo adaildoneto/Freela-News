@@ -3,7 +3,7 @@
         <div class="card horizontal grey lighten-4 hnewscard z-depth-0">
 
               <div class="card-stacked">
-                <div class="news-h grey-text text-darken-4">
+                <div class="news-h teal-text text-darken-4">
                   <?php the_title();?>
                 </div>
               </div>

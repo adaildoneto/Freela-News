@@ -14,7 +14,7 @@
         <img class="responsive-img" src="<?php echo $image[0]; ?>" >
 
           </div>
-      <div class="news grey-text text-darken-4">
+      <div class="news teal-text text-darken-4">
         <?php the_title();?>
       </div>
     </div>
