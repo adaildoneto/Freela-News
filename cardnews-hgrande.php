@@ -14,11 +14,11 @@
               <div class="card-stacked">
                 <div class="news-hgrande blue-grey-text text-darken-4">
                   <?php the_title();?>
-                  <hr class="style-one">
-                  </div>
+                      </div>
                   <div class="news-text blue-grey-text hide-on-med-and-down">
-                  <?php echo excerpt('20'); ?>
+                  <?php echo excerpt('30'); ?>
                   </div>
               </div>
             </div>
 </a>
+  <hr class="style-one">
