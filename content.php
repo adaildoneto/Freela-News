@@ -9,18 +9,23 @@
  */
 ?>
 
-<?php $image = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), '' );?>
-<div class="row">
+<?php $image =  wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), '' );?>
+<?php if( !empty( $image ) ): ?>
+	<div class="row">
 
-<div class="container intro-container" style="background: linear-gradient(to bottom, rgba(0,0,0,0) 0%,rgba(0,0,0,0) 52%,rgba(0,0,0,0.65) 84%,rgba(0,0,0,0.65) 100%), url('<?php echo $image[0]; ?>'); background-position: center; background-size: cover; margin-top: -180px">
-</div>
+	<div class="container intro-container" style="background: linear-gradient(to bottom, rgba(0,0,0,0) 0%,rgba(0,0,0,0) 52%,rgba(0,0,0,0.65) 84%,rgba(0,0,0,0.65) 100%), url('<?php echo $image[0]; ?>'); background-position: center; background-size: cover; margin-top: -180px">
+	</div>
 
-<div class="embassada" style="background: linear-gradient(to bottom, rgba(0,0,0,0) 0%,rgba(0,0,0,0) 52%,rgba(0,0,0,0.65) 84%,rgba(0,0,0,0.65) 100%), url('<?php echo $image[0]; ?>'); background-position: center; background-size: cover; filter: grayscale(100%) blur(5px);">
-</div>
+	<div class="embassada" style="background: linear-gradient(to bottom, rgba(0,0,0,0) 0%,rgba(0,0,0,0) 52%,rgba(0,0,0,0.65) 84%,rgba(0,0,0,0.65) 100%), url('<?php echo $image[0]; ?>'); background-position: center; background-size: cover; filter: grayscale(100%) blur(5px);">
+	</div>
 
-</div>
+	</div>
+	<div class="container" style="margin-top:-150px;">
+<?php else :?>
 
-<div class="container" style="margin-top:-150px;">
+<div class="container">
+<?php endif ?>
+
 			<div class="row">
 				<div id="content" class="col s12 l8 offset-l2 card" role="main" >
 
