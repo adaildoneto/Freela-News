@@ -26,7 +26,7 @@
               echo '<span class="new badge teal darken-4" data-badge-caption="'. esc_html( $categories[0]->name ) . '"></span>';
               }?>
     </div>
-  <div class="card-content center-align"  style="margin: 20px;">
+  <div class="card-content center-align" >
     <a href="<?php the_Permalink()?>" title="<?php the_title();?>" >
     <h5 class="white-text" >
     <?php the_title();?>
