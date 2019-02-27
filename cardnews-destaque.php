@@ -28,9 +28,9 @@
     </div>
   <div class="card-content center-align"  style="margin: 20px;">
     <a href="<?php the_Permalink()?>" title="<?php the_title();?>" >
-    <p class="news-destaque white-text" >
+    <h5 class="white-text" >
     <?php the_title();?>
-  </p>  </a>
+  </h5  </a>
     </div>
 
     </div>
