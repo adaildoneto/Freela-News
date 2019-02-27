@@ -35,7 +35,9 @@ get_header(); ?>
 						endwhile;
 
 						// Page navigation.
-						wp_pagination();
+						echo ('<div class="s12 center-align">');
+				wp_pagination();
+						echo ('</div>');
 
 					else :
 						// If no content, include the "No posts found" template.

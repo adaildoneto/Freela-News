@@ -25,13 +25,14 @@ get_header(); ?>
 								 * use this in a child theme, then include a file called content-___.php
 								 * (where ___ is the post format) and that will be used instead.
 								 */
-								get_template_part( 'cardenews', 'destaque' );
+								get_template_part( 'cardnews', 'destaque' );
 
 							endwhile;
 
 							// Post navigation.
+									echo ('<div class="s12 center-align">');
 							wp_pagination();
-
+									echo ('</div>');
 						else :
 							// If no content, include the "No posts found" template.
 							get_template_part( 'content', 'none' );
