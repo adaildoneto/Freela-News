@@ -216,7 +216,7 @@
 </div>
 
 
-<div class="row teal darken-1">
+<div class="row">
   <div class="container">
 
 
@@ -225,7 +225,7 @@
     $myargs = array (
       'pagination'             => false,
     'category_name'					 => 'politica',
-      'posts_per_page'         => 4,
+      'posts_per_page'         => 2,
       'ignore_sticky_posts'    => true,
 
     );
@@ -237,9 +237,9 @@
 
         $myquery->the_post();
 
-        echo ('<div class="col s12 m6 l3">');
+        echo ('<div class="col s12 m6 l6">');
 
-        get_template_part( 'cardnews', '' );
+        get_template_part( 'cardnews', 'slider' );
 
         echo ('</div>')  ;
               wp_reset_postdata();
@@ -252,7 +252,7 @@
 </div>
 
 
-<div class="row teal darken-4">
+<div class="row">
   <div class="container">
 
 
@@ -273,9 +273,9 @@
 
         $myquery->the_post();
 
-        echo ('<div class="col s12 m6 l3">');
+        echo ('<div class="col s12 m6 l6">');
 
-        get_template_part( 'cardnews', '' );
+        get_template_part( 'cardnews', 'hgrande' );
 
         echo ('</div>')  ;
               wp_reset_postdata();
@@ -347,7 +347,7 @@
 
         echo ('<div class="col s12 m6 l3">');
 
-        get_template_part( 'cardnews', '' );
+        get_template_part( 'cardnews', 'hgrande' );
 
         echo ('</div>')  ;
               wp_reset_postdata();
