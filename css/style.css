@@ -233,8 +233,8 @@ h2.titulo-post {
 }
 
 .img-hgrande{
-  height: 180px;
-  width: 200px;
+  height: auto;
+  width: 40%;
 }
 
 .news {

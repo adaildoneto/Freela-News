@@ -225,7 +225,7 @@
     $myargs = array (
       'pagination'             => false,
     'category_name'					 => 'politica',
-      'posts_per_page'         => 3,
+      'posts_per_page'         => 2,
       'ignore_sticky_posts'    => true,
 
     );
@@ -237,7 +237,7 @@
 
         $myquery->the_post();
 
-        echo ('<div class="col s12 m4 l4">');
+        echo ('<div class="col s12 m6 l6">');
 
         get_template_part( 'slider', '' );
 
