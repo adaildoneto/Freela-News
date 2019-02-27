@@ -40,7 +40,7 @@ get_header(); ?>
 			}
 
 		?>
-</div>
+
 
 
 <div class="row">
