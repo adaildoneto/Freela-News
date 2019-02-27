@@ -3,7 +3,7 @@
 <div class="row">
   <div class="container">
 
-  </div>
+  
   <?php
 
     $myargs = array (
