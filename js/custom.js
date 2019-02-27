@@ -43,6 +43,13 @@ jQuery(document).ready(function ($) {
 });
 
 jQuery(document).ready(function($) {
+  $('#post').find('img').addClass('responsive-img');
+  $('.wp_pagination').find('ul').addClass('pagination');
+  $('.pagination').find('li').addClass('waves-effect');
+  $('.current').addClass('btn-flat orange white-text');
+  $('.calendar_wrap').addClass('white-text');
+  $('#wp-calendar').addClass('centered');
+  $('#wp-calendar').find('a').addClass('chip orange lighten-4 red-text darken-text-3');
     $(".nav-item-dropdown-button").dropdown({constrainWidth: false, hover: false, coverTrigger:false,});
     $(".side-menu-nav-item-dropdown-button").dropdown({constrainWidth: false, hover: false,});
     $(".sidenav").sidenav();
