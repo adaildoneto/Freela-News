@@ -30,6 +30,7 @@
 		<?php
 			if ( is_single() ) :
 				the_title( '<div class="center-align"><h1 class="entry-title titulo-post">', '</h1></center>' );
+				 the_excerpt('<div class="center-align"><h5><i><b>', '</b></i></h5></div>');
 			else :
 				the_title( '<h2 class="entry-title titulo-post"><a href="' . esc_url( get_permalink() ) . '" rel="bookmark">', '</a></h2>' );
 			endif;
