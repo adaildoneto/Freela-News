@@ -66,6 +66,8 @@
 
     ?>
 
+  </div>
+
     <div class="col S12 m6 l3">
 
       <?php
@@ -166,7 +168,7 @@
     </div>
 
 </div>
-</div>
+
 
 	<div class="row">
 				<?php if ( dynamic_sidebar('publicidade') ) : else : endif; ?>
