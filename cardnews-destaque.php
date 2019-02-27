@@ -5,7 +5,7 @@
   <div class="card-content">
 <?php else :?>
   <div class="card teal darken-4">
-  <div class="card-content center-align">
+  <div class="card-title center-align">
 
 <?php endif ?>
 
