@@ -14,10 +14,13 @@
         <?php endif ?>
 
               <div class="card-stacked">
-                <?php $categories = get_the_category();
-                    if ( ! empty( $categories ) ) {
-                        echo '<span class="new badge teal darken-4 left" data-badge-caption="'. esc_html( $categories[0]->name ) . '"></span>';
-                        }?>
+                <div class="left" style="display: block;">
+                  <?php $categories = get_the_category();
+                      if ( ! empty( $categories ) ) {
+                          echo '<span class="new badge teal darken-4 left" data-badge-caption="'. esc_html( $categories[0]->name ) . '"></span>';
+                          }?>
+                </div>
+
                 <div class="news-hgrande teal-text text-darken-4">
                   <?php the_title();?>
                       </div>

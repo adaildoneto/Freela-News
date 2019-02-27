@@ -10,6 +10,14 @@
 </div>
 
   <div class="card-content">
+
+    <a href="<?php the_Permalink()?>" title="<?php the_title();?>" >
+    <span class="news-destaque white-text" >
+    <?php the_title();?>
+    </span>  </a>
+    </div>
+
+    </div>
 <?php else :?>
   <div class="card teal darken-4">
     <div class="nocanto2">
@@ -19,14 +27,12 @@
               }?>
     </div>
   <div class="card-content center-align"  style="margin: 20px;">
+    <a href="<?php the_Permalink()?>" title="<?php the_title();?>" >
+    <p class="news-destaque white-text" >
+    <?php the_title();?>
+  </p>  </a>
+    </div>
+
+    </div>
 
 <?php endif ?>
-
-
-<a href="<?php the_Permalink()?>" title="<?php the_title();?>" >
-<span class="news-destaque white-text" >
-<?php the_title();?>
-</span>  </a>
-</div>
-
-</div>
