@@ -1,12 +1,12 @@
-
+<div class="right">
+  <?php $categories = get_the_category();
+      if ( ! empty( $categories ) ) {
+          echo '<span class="new badge teal darken-4" data-badge-caption="'. esc_html( $categories[0]->name ) . '"></span>';
+          }?>
+</div>
   <a href="<?php the_Permalink()?>" title="<?php the_title();?>" >
         <div class="card transparent horizontal z-depth-0">
-          <div class="left">
-            <?php $categories = get_the_category();
-                if ( ! empty( $categories ) ) {
-                    echo '<span class="new badge blue-grey darken-5" data-badge-caption="'. esc_html( $categories[0]->name ) . '"></span>';
-                    }?>
-          </div>
+
 
           <?php $image =  wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'big-quadrado' );?>
           <?php if( !empty( $image ) ): ?>
