@@ -7,10 +7,18 @@
                     echo '<span class="new badge blue-grey darken-5" data-badge-caption="'. esc_html( $categories[0]->name ) . '"></span>';
                     }?>
           </div>
-              <div class="card-image">
-                      <?php $image =  wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'big-quadrado' );?>
-                <img class="responsive-img img-hgrande" src="<?php echo $image[0]; ?>" >
-              </div>
+
+          <?php $image =  wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'big-quadrado' );?>
+          <?php if( !empty( $image ) ): ?>
+
+            <div class="card-image">
+
+              <img class="responsive-img img-hgrande" src="<?php echo $image[0]; ?>" >
+            </div>
+        <?php else :?>
+
+        <?php endif ?>
+
               <div class="card-stacked">
                 <div class="news-hgrande blue-grey-text text-darken-4">
                   <?php the_title();?>
