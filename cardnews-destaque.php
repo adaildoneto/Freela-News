@@ -5,13 +5,13 @@
   <div class="card-content">
 <?php else :?>
   <div class="card teal darken-4">
-  <div class="card-title center-align">
+  <div class="card-content center-align white-text">
 
 <?php endif ?>
 
 
 <a href="<?php the_Permalink()?>" title="<?php the_title();?>" >
-<span class="white-text news-destaque" >
+<span class="news-destaque" >
 <?php the_title();?>
 </span>  </a>
 </div>
