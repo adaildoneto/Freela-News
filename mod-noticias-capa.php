@@ -6,7 +6,7 @@
                   $myargs = array (
                     'pagination'             => false,
                     'category_name'					 => 'destaque',
-                    'posts_per_page'         => 6,
+                    'posts_per_page'         => 4,
                     'ignore_sticky_posts'    => true,
 
                   );
@@ -88,7 +88,7 @@
 					$myquery->the_post();
 
           if ( $myquery->current_post == 0 )  {
-          get_template_part( 'cardnews', 'destaque' );
+          get_template_part( 'cardnews', '' );
         } else {
           get_template_part( 'cardnews', '' );
 
@@ -126,7 +126,7 @@
 					$myquery->the_post();
 
           	if ( $myquery->current_post == 0 )  {
-          	get_template_part( 'cardnews', 'destaque' );
+          	get_template_part( 'cardnews', '' );
           } else {
               	get_template_part( 'cardnews', 'horizontal' );
 
