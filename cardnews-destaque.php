@@ -8,7 +8,10 @@
   <div class="card-content center-align">
 
 <?php endif ?>
-
+<?php $categories = get_the_category();
+    if ( ! empty( $categories ) ) {
+        echo '<span class="new badge green darken-4" data-badge-caption="'. esc_html( $categories[0]->name ) . '"></span>';
+        }?>
 
 <a href="<?php the_Permalink()?>" title="<?php the_title();?>" >
 <span class="news-destaque white-text" >

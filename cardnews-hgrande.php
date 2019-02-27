@@ -1,10 +1,4 @@
-<div class="right">
-  <?php $categories = get_the_category();
-      if ( ! empty( $categories ) ) {
-          echo '<span class="new badge teal darken-4" data-badge-caption="'. esc_html( $categories[0]->name ) . '"></span>';
-          }?>
-</div>
-  <a href="<?php the_Permalink()?>" title="<?php the_title();?>" >
+f="<?php the_Permalink()?>" title="<?php the_title();?>" >
         <div class="card transparent horizontal z-depth-0">
 
 
@@ -20,6 +14,10 @@
         <?php endif ?>
 
               <div class="card-stacked">
+                <?php $categories = get_the_category();
+                    if ( ! empty( $categories ) ) {
+                        echo '<span class="new badge teal darken-4" data-badge-caption="'. esc_html( $categories[0]->name ) . '"></span>';
+                        }?>
                 <div class="news-hgrande blue-grey-text text-darken-4">
                   <?php the_title();?>
                       </div>
