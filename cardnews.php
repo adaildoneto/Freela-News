@@ -20,6 +20,6 @@
     </div>
   </a>
 <?php else :?>
-<?php get_template_part( 'cardnews', 'destaque' )
+<?php get_template_part( 'cardnews', 'destaque' ); ?>
 
 <?php endif ?>
