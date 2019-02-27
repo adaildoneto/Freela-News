@@ -1,65 +1,101 @@
-<div class="row">
-<div class="col s12 m12 l6">
 
+<div class="row teal darken-4">
+  <?php
 
-    <?php
+    $myargs = array (
+      'pagination'             => false,
+      'cat'							   			=> 'polícia',
+      'posts_per_page'         => 4,
+        'offset'                  => ,
+      'ignore_sticky_posts'    => true,
 
-      $myargs = array (
-        'pagination'             => false,
-        'category_name'					=> 'saude, geral',
-        'posts_per_page'         => 2,
-        'ignore_sticky_posts'    => true,
+    );
+    // The Query
+    $myquery = new WP_Query( $myargs );
 
-      );
-      // The Query
-      $myquery = new WP_Query( $myargs );
+    // The Loop
+    while ( $myquery->have_posts() ) {
 
-      // The Loop
-      while ( $myquery->have_posts() ) {
+        $myquery->the_post();
 
-          $myquery->the_post();
+        echo ('<div class="col s12 m6 l3">');
 
-            echo ('<div class="col s12 ">');
-          get_template_part( 'cardnews', 'hgrande' );
-              echo ('</div>')  ;
+        get_template_part( 'cardnews', 'destaque' );
 
-                wp_reset_postdata();
+        echo ('</div>')  ;
+              wp_reset_postdata();
 
-        }
+      }
 
-      ?>
+    ?>
+
 
 </div>
-    <div class="col s12 m12 l6">
-      <?php
+<div class="row teal darken-3">
+  <?php
 
-        $myargs = array (
-          'pagination'             => false,
-          'category_name'					=> 'economia',
-          'posts_per_page'         => 1,
-          'offset'                  => 2,
-          'ignore_sticky_posts'    => true,
+    $myargs = array (
+      'pagination'             => false,
+      'cat'							   			=> 'política',
+      'posts_per_page'         => 4,
+        'offset'                  => ,
+      'ignore_sticky_posts'    => true,
 
-        );
-        // The Query
-        $myquery = new WP_Query( $myargs );
+    );
+    // The Query
+    $myquery = new WP_Query( $myargs );
 
-        // The Loop
-        while ( $myquery->have_posts() ) {
+    // The Loop
+    while ( $myquery->have_posts() ) {
 
-            $myquery->the_post();
+        $myquery->the_post();
+
+        echo ('<div class="col s12 m6 l3">');
+
+        get_template_part( 'cardnews', 'destaque' );
+
+        echo ('</div>')  ;
+              wp_reset_postdata();
+
+      }
+
+    ?>
 
 
+</div>
 
-            get_template_part( 'slider', '' );
+
+<div class="row">
+  <?php
+
+    $myargs = array (
+      'pagination'             => false,
+      'cat'							   			=> 'COTIDIANO',
+      'posts_per_page'         => 4,
+        'offset'                  => ,
+      'ignore_sticky_posts'    => true,
+
+    );
+    // The Query
+    $myquery = new WP_Query( $myargs );
+
+    // The Loop
+    while ( $myquery->have_posts() ) {
+
+        $myquery->the_post();
+
+        echo ('<div class="col s12 m6 l3">');
+
+        get_template_part( 'cardnews', 'destaque' );
+
+        echo ('</div>')  ;
+              wp_reset_postdata();
+
+      }
+
+    ?>
 
 
-                  wp_reset_postdata();
-
-          }
-
-        ?>
-    </div>
 </div>
 
 <div class="row">
@@ -67,9 +103,145 @@
 
     $myargs = array (
       'pagination'             => false,
-      'cat'							   			=> 'turismo, cultura',
+      'cat'							   			=> 'CULTURA',
       'posts_per_page'         => 4,
-        'offset'                  => 2,
+        'offset'                  => ,
+      'ignore_sticky_posts'    => true,
+
+    );
+    // The Query
+    $myquery = new WP_Query( $myargs );
+
+    // The Loop
+    while ( $myquery->have_posts() ) {
+
+        $myquery->the_post();
+
+        echo ('<div class="col s12 m6 l3">');
+
+        get_template_part( 'cardnews', 'destaque' );
+
+        echo ('</div>')  ;
+              wp_reset_postdata();
+
+      }
+
+    ?>
+
+
+</div>
+
+
+<div class="row">
+  <?php
+
+    $myargs = array (
+      'pagination'             => false,
+      'cat'							   			=> 'ESPORTE',
+      'posts_per_page'         => 4,
+        'offset'                  => ,
+      'ignore_sticky_posts'    => true,
+
+    );
+    // The Query
+    $myquery = new WP_Query( $myargs );
+
+    // The Loop
+    while ( $myquery->have_posts() ) {
+
+        $myquery->the_post();
+
+        echo ('<div class="col s12 m6 l3">');
+
+        get_template_part( 'cardnews', 'destaque' );
+
+        echo ('</div>')  ;
+              wp_reset_postdata();
+
+      }
+
+    ?>
+
+
+</div>
+
+
+<div class="row">
+  <?php
+
+    $myargs = array (
+      'pagination'             => false,
+      'cat'							   			=> 'ECONOMIA',
+      'posts_per_page'         => 4,
+        'offset'                  => ,
+      'ignore_sticky_posts'    => true,
+
+    );
+    // The Query
+    $myquery = new WP_Query( $myargs );
+
+    // The Loop
+    while ( $myquery->have_posts() ) {
+
+        $myquery->the_post();
+
+        echo ('<div class="col s12 m6 l3">');
+
+        get_template_part( 'cardnews', 'destaque' );
+
+        echo ('</div>')  ;
+              wp_reset_postdata();
+
+      }
+
+    ?>
+
+
+</div>
+
+
+<div class="row">
+  <?php
+
+    $myargs = array (
+      'pagination'             => false,
+      'cat'							   			=> 'EDUCAÇÃO',
+      'posts_per_page'         => 4,
+        'offset'                  => ,
+      'ignore_sticky_posts'    => true,
+
+    );
+    // The Query
+    $myquery = new WP_Query( $myargs );
+
+    // The Loop
+    while ( $myquery->have_posts() ) {
+
+        $myquery->the_post();
+
+        echo ('<div class="col s12 m6 l3">');
+
+        get_template_part( 'cardnews', 'destaque' );
+
+        echo ('</div>')  ;
+              wp_reset_postdata();
+
+      }
+
+    ?>
+
+
+</div>
+
+
+<div class="row">
+  <?php
+
+    $myargs = array (
+      'pagination'             => false,
+      'cat'							   			=> 'CULTURA',
+      'posts_per_page'         => 4,
+        'offset'                  => ,
       'ignore_sticky_posts'    => true,
 
     );
