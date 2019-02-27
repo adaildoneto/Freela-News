@@ -1,7 +1,7 @@
 
   <a href="<?php the_Permalink()?>" title="<?php the_title();?>" >
         <div class="card transparent horizontal z-depth-0">
-          <div class="nocanto1">
+          <div class="left">
             <?php $categories = get_the_category();
                 if ( ! empty( $categories ) ) {
                     echo '<span class="new badge blue-grey darken-5" data-badge-caption="'. esc_html( $categories[0]->name ) . '"></span>';
