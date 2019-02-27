@@ -1,4 +1,4 @@
-f="<?php the_Permalink()?>" title="<?php the_title();?>" >
+<a href="<?php the_Permalink()?>" title="<?php the_title();?>" >
         <div class="card transparent horizontal z-depth-0">
 
 
