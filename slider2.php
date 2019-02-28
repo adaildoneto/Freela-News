@@ -8,11 +8,13 @@
                             echo '<span class="new badge teal darken-4" data-badge-caption="'. esc_html( $categories[0]->name ) . '"></span>';
                           }?>
                   </div>
+                  <div class="">
+                    <a href="<?php the_Permalink()?>" title="<?php the_title();?>" >
+                    <b><h5 class="white-text" style="text-shadow: 4px 4px 2px rgba(0, 0, 0, 0.7);">
+                      <?php the_title();?>
+                    </h5></b>  </a>
+                  </div>
 
-                  <a href="<?php the_Permalink()?>" title="<?php the_title();?>" >
-                  <b><h5 class="white-text" style="text-shadow: 4px 4px 2px rgba(0, 0, 0, 0.7);">
-                    <?php the_title();?>
-                  </h5></b>  </a>
             </div>
 
 
