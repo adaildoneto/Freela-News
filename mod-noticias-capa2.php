@@ -2,10 +2,11 @@
 	<div class="container">
 		<div class="center-align titulo">
 			<h5 class="white-text">Colunas</h5>
-			<div class="divider"></div> </div>
+			<div class="divider"></div>
+		</div>
 
-		<div class="row">
-			<div class="sl1der2">
+		<div class="row sl1der2">
+
 
 				<?php
 
@@ -36,7 +37,7 @@
 					?>
 
 
-			</div>
+
 		</div>
 
 
