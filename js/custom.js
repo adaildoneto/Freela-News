@@ -45,9 +45,9 @@ jQuery(document).ready(function ($) {
 jQuery(document).ready(function ($) {
   $('#sl1der2').slick({
   dots: true,
-  slidesToShow: 3,
-  slidesToScroll: 2,
-  fade: true,
+  slidesToShow: 4,
+  slidesToScroll: 3,
+  fade: false,
   speed: 1800,
   infinite: true,
   autoplay: true,
