@@ -42,6 +42,51 @@ jQuery(document).ready(function ($) {
 
 });
 
+jQuery(document).ready(function ($) {
+  $('.sl1der2').slick({
+  dots: true,
+  slidesToShow: 3,
+  slidesToScroll: 1,
+  fade: true,
+  speed: 1800,
+  infinite: true,
+  autoplay: true,
+  autoplaySpeed: 6000,
+  responsive: [
+  {
+  breakpoint: 1024,
+  settings: {
+  slidesToShow: 3,
+  slidesToScroll: 1,
+  dots: true
+  }
+  },
+  {
+  breakpoint: 600,
+  settings: {
+  slidesToShow: 2,
+  slidesToScroll: 1,
+  arrows: false
+  }
+  },
+  {
+  breakpoint: 480,
+  settings: {
+  slidesToShow: 1,
+  slidesToScroll: 1,
+  arrows: false
+  }
+  }
+  // You can unslick at a given breakpoint now by adding:
+  // settings: "unslick"
+  // instead of a settings object
+  ]
+  });
+  // FIM Slick Slider
+
+});
+
+
 jQuery(document).ready(function($) {
   $('#post').find('img').addClass('responsive-img');
   $('.wp_pagination').find('ul').addClass('pagination');

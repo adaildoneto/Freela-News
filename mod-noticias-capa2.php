@@ -1,98 +1,42 @@
-<div class="container">
-	<div class="col S12 m6 l3">
+<div class="row grey darken-4"  style="padding: 20px;">
+	<div class="container">
+		<div class="sl1der2">
 
-		<?php
+			<?php
 
-			$myargs = array (
-				'pagination'             => false,
-				'category_name'					=> '',
-				'posts_per_page'         => 1,
-				'ignore_sticky_posts'    => true,
+				$myargs = array (
+					'pagination'             => false,
+					'category_name'					=> '',
+					'posts_per_page'         => 12,
+					'ignore_sticky_posts'    => true,
 
-			);
-			// The Query
-			$myquery = new WP_Query( $myargs );
+				);
+				// The Query
+				$myquery = new WP_Query( $myargs );
 
-			// The Loop
-			while ( $myquery->have_posts() ) {
+				// The Loop
+				while ( $myquery->have_posts() ) {
 
-					$myquery->the_post();
-
-
-
-					get_template_part( 'cardnews', '' );
+						$myquery->the_post();
 
 
-								wp_reset_postdata();
+	  echo ('<div class="col s12 m4 l3">');
+						get_template_part( 'slider', '' );
+	    echo ('</div>');
 
-				}
+									wp_reset_postdata();
 
-			?>
-			<?php if ( dynamic_sidebar('vpublicidade') ) : else : endif; ?>
+					}
+
+				?>
+
+
+		</div>
 
 	</div>
-	<div class="col S12 m6 push-l6 l3">
 
-		<?php
-
-			$myargs = array (
-				'pagination'             => false,
-				'category_name'					=> '',
-				'posts_per_page'         => 5,
-				'ignore_sticky_posts'    => true,
-
-			);
-			// The Query
-			$myquery = new WP_Query( $myargs );
-
-			// The Loop
-			while ( $myquery->have_posts() ) {
-
-					$myquery->the_post();
-
-							if ( $myquery->current_post == 0 )  {
-											get_template_part( 'cardnews', 'destaque' );
-										} else {
-													get_template_part( 'cardnews', 'horizontal' );
-
-										}
-
-								wp_reset_postdata();
-
-				}
-
-			?>
-	</div>
-
-<div class="col S12 m12 l6 pull-l3">
-
-
-	<?php
-
-		$myargs = array (
-			'pagination'             => false,
-			'category_name'					 => '',
-			'offset'									=> 1,
-			'posts_per_page'         => 3,
-			'ignore_sticky_posts'    => true,
-
-		);
-		// The Query
-		$myquery = new WP_Query( $myargs );
-
-		// The Loop
-		while ( $myquery->have_posts() ) {
-
-				$myquery->the_post();
-
-				get_template_part( 'cardnews', 'hgrande' );
-
-							wp_reset_postdata();
-
-			}
-
-		?>
 </div>
+
 
 
 
