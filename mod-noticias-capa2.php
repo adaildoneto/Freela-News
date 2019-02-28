@@ -5,7 +5,7 @@
 			<div class="divider"></div>
 		</div>
 
-		<div class="row sl1der2">
+		<div id="sl1der2" class="row">
 
 
 				<?php

@@ -43,7 +43,7 @@ jQuery(document).ready(function ($) {
 });
 
 jQuery(document).ready(function ($) {
-  $('.sl1der2').slick({
+  $('#sl1der2').slick({
   dots: true,
   slidesToShow: 3,
   slidesToScroll: 2,
