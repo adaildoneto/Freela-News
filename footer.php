@@ -12,6 +12,12 @@
 
 <footer class="page-footer teal darken-4 z-depth-2" style="margin-top: -20px;">
     <div class="container">
+      <div class="row">
+            <?php if ( dynamic_sidebar('publicidade') ) : else : endif; ?>
+          </div>
+
+
+    </div>
         <div class="row">
 
             <div class="col l4 m12 s12">

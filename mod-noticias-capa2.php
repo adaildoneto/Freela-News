@@ -28,7 +28,7 @@
 
 
 							get_template_part( 'slider2', '' );
-	
+
 
 										wp_reset_postdata();
 
@@ -40,12 +40,7 @@
 
 		</div>
 
-		<div class="row">
-					<?php if ( dynamic_sidebar('publicidade') ) : else : endif; ?>
-				</div>
 
-
-	</div>
 
 </div>
 
