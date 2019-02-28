@@ -43,13 +43,13 @@ get_header(); ?>
 
 
 
-<div class="row">
+<div class="row" style="margin: 0px;">
 	<div class="container">
 			<?php include(TEMPLATEPATH.'/mod-noticias-capa.php');?>
 	</div>
 
 </div>
-<div class="row grey darken-4"  style="padding: 20px;">
+<div class="row grey darken-4"  style="padding: 20px;" style="margin: 0px;">
 	<div class="container">
 		<div class="center-align titulo">
 			<h5 class="white-text">Vídeos</h5>
@@ -73,7 +73,7 @@ get_header(); ?>
 <div class="divider">
 
 </div>
-<div class="row grey lighten-4">
+<div class="row grey lighten-4" style="margin: 0px;">
 	<div class="container">
 		<div class="row">
 			<?php include(TEMPLATEPATH.'/mod-noticias-linha.php');?>
@@ -82,7 +82,7 @@ get_header(); ?>
 	</div>
 </div>
 
-<div class="row">
+<div class="row" style="margin: 0px;" >
 
 
 <?php include(TEMPLATEPATH.'/mod-noticias-capa2.php');?>
