@@ -26,7 +26,7 @@
 							$myquery->the_post();
 
 
-		  echo ('<div class="col s12">');
+		  
 							get_template_part( 'slider2', '' );
 		    echo ('</div>');
 
