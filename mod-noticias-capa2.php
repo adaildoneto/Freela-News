@@ -40,6 +40,10 @@
 
 		</div>
 
+		<div class="row">
+					<?php if ( dynamic_sidebar('publicidade') ) : else : endif; ?>
+				</div>
+
 
 	</div>
 
@@ -48,9 +52,6 @@
 
 
 
-	<div class="row">
-				<?php if ( dynamic_sidebar('publicidade') ) : else : endif; ?>
-			</div>
 
 
 </div>
