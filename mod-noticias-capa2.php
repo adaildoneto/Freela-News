@@ -26,8 +26,8 @@
 							$myquery->the_post();
 
 
-		  echo ('<div class="col s12 m6 l4">');
-							get_template_part( 'slider', '' );
+		  echo ('<div class="col s12">');
+							get_template_part( 'slider2', '' );
 		    echo ('</div>');
 
 										wp_reset_postdata();
