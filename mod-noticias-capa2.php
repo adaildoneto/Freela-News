@@ -26,9 +26,9 @@
 							$myquery->the_post();
 
 
-		  
+
 							get_template_part( 'slider2', '' );
-		    echo ('</div>');
+	
 
 										wp_reset_postdata();
 
