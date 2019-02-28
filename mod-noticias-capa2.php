@@ -20,7 +20,7 @@
 						$myquery->the_post();
 
 
-	  echo ('<div class="col s12 m4 l3">');
+	  echo ('<div class="col s12 m6 l4">');
 						get_template_part( 'slider', '' );
 	    echo ('</div>');
 
