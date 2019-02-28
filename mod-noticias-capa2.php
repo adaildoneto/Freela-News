@@ -4,8 +4,8 @@
 			<h5 class="white-text">Colunas</h5>
 			<div class="divider"></div>
 		</div>
-
-		<div id="sl1der2" class="row">
+<div class="row">
+		<div id="sl1der2">
 
 
 				<?php
@@ -36,7 +36,7 @@
 
 					?>
 
-
+				</div>
 
 		</div>
 
