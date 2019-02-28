@@ -17,7 +17,7 @@
           </div>
 
 
-    </div>
+
         <div class="row">
 
             <div class="col l4 m12 s12">

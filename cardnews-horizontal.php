@@ -1,6 +1,6 @@
 
   <a href="<?php the_Permalink()?>" title="<?php the_title();?>" >
-        <div class="card horizontal grey lighten-4 hnewscard z-depth-0">
+        <div class="card horizontal white hnewscard z-depth-1">
 
               <div class="card-stacked">
                 <div class="news-h teal-text text-darken-4">
