@@ -43,9 +43,16 @@ get_header(); ?>
 
 
 
+
 <div class="row" style="margin: 0px;">
 	<div class="container">
-			<?php include(TEMPLATEPATH.'/mod-noticias-capa.php');?>
+		<div class="row">
+					<?php if ( dynamic_sidebar('publicidade') ) : else : endif; ?>
+				</div>
+				<div class="row">
+					<?php include(TEMPLATEPATH.'/mod-noticias-capa.php');?>
+				</div>
+
 	</div>
 
 </div>
