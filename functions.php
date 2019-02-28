@@ -436,6 +436,36 @@ array(
 	'after_title' => '</h6><hr class="style-one">',
 )
 );
+
+register_sidebar(
+		array(
+		'name'          => 'Rodapé 1',
+		'id'            => 'rodape1',
+		'before_widget' => '<div>',
+		'after_widget'  => '</div>',
+		'before_title'  => '<p class="rounded white-text">',
+		'after_title'   => '</p>',
+	));
+
+	register_sidebar(
+		array(
+		'name'          => 'Rodapé 2',
+		'id'            => 'rodape2',
+		'before_widget' => '<div>',
+		'after_widget'  => '</div>',
+		'before_title'  => '<p class="rounded white-text">',
+		'after_title'   => '</p>',
+	));
+
+	register_sidebar(
+		array(
+		'name'          => 'Rodapé 3',
+		'id'            => 'rodape3',
+		'before_widget' => '<div>',
+		'after_widget'  => '</div>',
+		'before_title'  => '<p class="rounded white-text">',
+		'after_title'   => '</p>',
+	));
 }
 
 add_action( 'widgets_init', 'odin_widgets_init' );
