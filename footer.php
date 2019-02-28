@@ -27,7 +27,7 @@
             </div>
         </div>
     </div>
-    <div class="footer-copyright">
+    <div class="footer-copyright center-align">
         <div class="container">
             Feito com <i class="fa fa-heart" aria-hidden="true"></i> no Acre
         </div>
