@@ -1,37 +1,44 @@
 <div class="row grey darken-4"  style="padding: 20px;">
 	<div class="container">
-		<div class="sl1der2">
+		<div class="center-align titulo">
+			<h5 class="white-text">Colunas</h5>
+			<div class="divider"></div> </div>
 
-			<?php
+		<div class="row">
+			<div class="sl1der2">
 
-				$myargs = array (
-					'pagination'             => false,
-					'category_name'					=> '',
-					'posts_per_page'         => 12,
-					'ignore_sticky_posts'    => true,
+				<?php
 
-				);
-				// The Query
-				$myquery = new WP_Query( $myargs );
+					$myargs = array (
+						'pagination'             => false,
+						'category_name'					=> '',
+						'posts_per_page'         => 12,
+						'ignore_sticky_posts'    => true,
 
-				// The Loop
-				while ( $myquery->have_posts() ) {
+					);
+					// The Query
+					$myquery = new WP_Query( $myargs );
 
-						$myquery->the_post();
+					// The Loop
+					while ( $myquery->have_posts() ) {
 
-
-	  echo ('<div class="col s12 m6 l4">');
-						get_template_part( 'slider', '' );
-	    echo ('</div>');
-
-									wp_reset_postdata();
-
-					}
-
-				?>
+							$myquery->the_post();
 
 
+		  echo ('<div class="col s12 m6 l4">');
+							get_template_part( 'slider', '' );
+		    echo ('</div>');
+
+										wp_reset_postdata();
+
+						}
+
+					?>
+
+
+			</div>
 		</div>
+
 
 	</div>
 
