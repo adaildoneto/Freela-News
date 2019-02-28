@@ -4,12 +4,12 @@
             <div style="position: absolute; bottom: 20px; padding: 10px; ">
               <?php $categories = get_the_category();
                   if ( ! empty( $categories ) ) {
-                      echo '<span class="new badge teal darken-4" data-badge-caption="'. esc_html( $categories[0]->name ) . '"></span>';
+                      echo '<span class="left new badge teal darken-4" data-badge-caption="'. esc_html( $categories[0]->name ) . '"></span>';
                     }?>
                   <a href="<?php the_Permalink()?>" title="<?php the_title();?>" >
-                  <b><h6 class="white-text" style="text-shadow: 4px 4px 2px rgba(0, 0, 0, 0.7);">
+                  <b><h5 class="white-text" style="text-shadow: 4px 4px 2px rgba(0, 0, 0, 0.7);">
                     <?php the_title();?>
-                  </h6></b>  </a>
+                  </h5></b>  </a>
             </div>
 
 
