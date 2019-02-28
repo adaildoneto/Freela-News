@@ -14,7 +14,7 @@
         <?php endif ?>
 
               <div class="card-stacked">
-                <div class="left" style="display: block;">
+                <div class="left" style="margin-bottom: 10px; display: block;">
                   <?php $categories = get_the_category();
                       if ( ! empty( $categories ) ) {
                           echo '<span class="new badge teal darken-4 left" data-badge-caption="'. esc_html( $categories[0]->name ) . '"></span>';
