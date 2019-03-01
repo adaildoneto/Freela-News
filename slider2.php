@@ -9,11 +9,11 @@
                             echo '<span class="new badge teal darken-4" data-badge-caption="'. esc_html( $categories[0]->name ) . '"></span>';
                           }?>
                   </div>
-                  <div class="news-hgrande white-text">
+                  <div class="news-hgrande white-text" style="display: block;">
 
-                    <b><span class="white-text" style="text-shadow: 4px 4px 2px rgba(0, 0, 0, 0.7);">
+                    <span class="white-text" style="text-shadow: 4px 4px 2px rgba(0, 0, 0, 0.7);">
                       <?php the_title();?>
-                    </span></b>
+                    </span>
                   </div>
 
             </div>
