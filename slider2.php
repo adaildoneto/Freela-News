@@ -11,9 +11,9 @@
                   </div>
                   <div class="news-hgrande white-text" style="display: block;">
 
-                    <span class="white-text" style="text-shadow: 4px 4px 2px rgba(0, 0, 0, 0.7);">
+                    <p class="white-text" style="text-shadow: 4px 4px 2px rgba(0, 0, 0, 0.7);">
                       <?php the_title();?>
-                    </span>
+                    </p>
                   </div>
 
             </div>
