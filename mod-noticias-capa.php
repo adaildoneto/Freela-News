@@ -37,7 +37,7 @@
 
     $myargs = array (
       'pagination'             => false,
-    	'cat'										=> array(' -46, -15, -16, -50, -20, -17, -21, -49, -48, -55, -18, -19, -58, -51,'),
+    	'cat'										=> array('-4942, -46, -15, -16, -50, -20, -17, -21, -49, -48, -55, -18, -19, -58, -51,'),
       'posts_per_page'         => 2,
       'ignore_sticky_posts'    => true,
 
@@ -72,7 +72,7 @@
 
 			$myargs = array (
 				'pagination'             => false,
-			'cat'										=> array(' -46, -15, -16, -50, -20, -17, -21, -49, -48, -55, -18, -19, -58, -51,'),
+			'cat'										=> array('-4942, -46, -15, -16, -50, -20, -17, -21, -49, -48, -55, -18, -19, -58, -51,'),
         'offset'                => 2,
 				'posts_per_page'         => 4,
 				'ignore_sticky_posts'    => true,
