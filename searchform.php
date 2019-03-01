@@ -7,8 +7,8 @@
  */
 ?>
 
-<nav>
-	<div class="nav-wrapper transparent">
+<nav class="white">
+	<div class="nav-wrapper">
 		<form>
 			<div class="input-field white-text">
 			 <input id="search" type="search" placeholder="Pesquisa" value="<?php echo get_search_query(); ?>" name="s"/>
