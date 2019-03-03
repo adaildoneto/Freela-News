@@ -7,7 +7,7 @@
         <?php the_title();?>
       </h1>
 
-      <a href="<?php the_Permalink()?>" title="<?php the_title();?>" class="btn wave-effect grey darken-4 white-text" >Leia mais</a>
+      <a href="<?php the_Permalink()?>" title="<?php the_title();?>" class="btn wave-effect teal darken-4 white-text" >Leia mais</a>
 
     </div>
   </div>

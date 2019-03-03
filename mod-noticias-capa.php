@@ -32,13 +32,15 @@
 
   </div>
 
-
+  <div class="row">
+      <?php if ( dynamic_sidebar('spublicidade') ) : else : endif; ?>
+  </div>
   <?php
 
     $myargs = array (
       'pagination'             => false,
     	'cat'										=> array('-4942, -46, -15, -16, -50, -20, -17, -21, -49, -48, -55, -18, -19, -58, -51,'),
-      'posts_per_page'         => 2,
+      'posts_per_page'         => 3,
       'ignore_sticky_posts'    => true,
 
     );
@@ -87,7 +89,7 @@
 					$myquery->the_post();
 
           if ( $myquery->current_post == 0 )  {
-          get_template_part( 'cardnews', '' );
+           if ( dynamic_sidebar('fpublicidade') ) : else : endif;
         } else {
           get_template_part( 'cardnews', '' );
 

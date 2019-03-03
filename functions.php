@@ -222,6 +222,28 @@ function odin_widgets_init() {
 );
 register_sidebar(
 array(
+	'name' => __( 'Publicidade debaixo do slider', 'odin' ),
+	'id' => 'spublicidade',
+	'description' => __( 'Publicidade basa', 'odin' ),
+	'before_widget' => '<div id="%1$s" class="widget %2$s">',
+	'after_widget' => '</div>',
+	'before_title' => '<h6 class="wtitle grey-text text-darken-3">',
+	'after_title' => '</h6><hr class="style-one">',
+)
+);
+register_sidebar(
+array(
+	'name' => __( 'Publicidade quadrada', 'odin' ),
+	'id' => 'fpublicidade',
+	'description' => __( 'Publicidade fieac', 'odin' ),
+	'before_widget' => '<div id="%1$s" class="widget %2$s">',
+	'after_widget' => '</div>',
+	'before_title' => '<h6 class="wtitle grey-text text-darken-3">',
+	'after_title' => '</h6><hr class="style-one">',
+)
+);
+register_sidebar(
+array(
 	'name' => __( 'Publicidade Vertical', 'odin' ),
 	'id' => 'vpublicidade',
 	'description' => __( 'Publicidade Vertical', 'odin' ),

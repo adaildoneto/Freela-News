@@ -32,7 +32,7 @@
 			<div class="container">
 				<div class="row">
 					<div class="col s1 m1 l1">
-	<a href="#" data-target="mobile-menu" class="sidenav-trigger show-on-large">	<i class="fas fa-bars"></i></a>
+	<a href="#" data-target="mobile-menu" class="sidenav-trigger">	<i class="fas fa-bars"></i></a>
 
 
 					</div>
@@ -107,7 +107,7 @@
 		 ?>
 
 		 <div id="modal1" class="modal">
-		     <div class="modal-content">
+		     <div class="modal-content transparent">
 		 			<?php include(TEMPLATEPATH.'/searchform.php');?>
 
 		     </div>
