@@ -1,6 +1,6 @@
 jQuery(document).ready(function ($) {
   $('.sl1der').slick({
-  dots: true,
+  dots: false,
   slidesToShow: 1,
   slidesToScroll: 1,
   fade: true,
@@ -44,7 +44,7 @@ jQuery(document).ready(function ($) {
 
 jQuery(document).ready(function ($) {
   $('#sl1der2').slick({
-  dots: true,
+  dots: false,
   slidesToShow: 4,
   slidesToScroll: 3,
   fade: false,

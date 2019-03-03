@@ -171,7 +171,7 @@
 </div>
 
 
-<div class="row">
+<div class="row center-align">
     <?php if ( dynamic_sidebar('spublicidade') ) : else : endif; ?>
 </div>
 
