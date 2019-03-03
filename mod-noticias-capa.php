@@ -88,21 +88,16 @@
 
 					$myquery->the_post();
 
-          if ( $myquery->current_post == 0 )  {
-           if ( dynamic_sidebar('fpublicidade') ) : else : endif;
-        } else {
           get_template_part( 'cardnews', '' );
 
-
-        }
-
-
-
-								wp_reset_postdata();
+					wp_reset_postdata();
 
 				}
 
+         if ( dynamic_sidebar('fpublicidade') ) : else : endif;
 			?>
+
+
 	</div>
 
 	<div class="col S12 m6 l3">

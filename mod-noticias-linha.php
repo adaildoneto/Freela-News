@@ -3,9 +3,7 @@
 <div class="row">
   <div class="container">
 
-    <div class="row">
-          <?php if ( dynamic_sidebar('publicidade') ) : else : endif; ?>
-        </div>
+
 
   <?php
 
@@ -173,7 +171,9 @@
 </div>
 
 
-
+<div class="row">
+    <?php if ( dynamic_sidebar('spublicidade') ) : else : endif; ?>
+</div>
 
 <div class="row">
   <div class="container">
