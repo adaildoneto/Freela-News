@@ -472,3 +472,10 @@ function wp_pagination($pages = '', $range = 9)
     if ( !empty($wp_query->query_vars['s']) ) $pagination['add_args'] = array( 's' => get_query_var( 's' ) );
     echo '<div class="wp_pagination">'.paginate_links( $pagination ).'</div>';
 }
+
+
+// custom login 
+function custom_login_css() {
+echo '<link rel="stylesheet" type="text/css" href="'.get_stylesheet_directory_uri().'/style.css"/>';
+}
+add_action('login_head', 'custom_login_css');
