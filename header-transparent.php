@@ -25,7 +25,25 @@
 	<?php wp_head(); ?>
 </head>
 
-<body class="teal darken-4">
+<body class="grey">
+	<script>
+  window.fbAsyncInit = function() {
+    FB.init({
+      appId      : '249614799253636',
+      xfbml      : true,
+      version    : 'v3.2'
+    });
+    FB.AppEvents.logPageView();
+  };
+
+  (function(d, s, id){
+     var js, fjs = d.getElementsByTagName(s)[0];
+     if (d.getElementById(id)) {return;}
+     js = d.createElement(s); js.id = id;
+     js.src = "https://connect.facebook.net/en_US/sdk.js";
+     fjs.parentNode.insertBefore(js, fjs);
+   }(document, 'script', 'facebook-jssdk'));
+</script>
 	<div class="float-panel" data-top="0" data-scroll="400">
 
 		<nav class="nav-extended z-depth-0 transparente" style="background: linear-gradient(to bottom, rgba(0,0,0,0.65) 0%,rgba(0,0,0,0.65) 35%,rgba(0,0,0,0) 100%);" >

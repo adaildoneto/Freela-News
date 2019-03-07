@@ -26,6 +26,24 @@
 </head>
 
 <body class="teal lighten-5">
+	<script>
+  window.fbAsyncInit = function() {
+    FB.init({
+      appId      : '249614799253636',
+      xfbml      : true,
+      version    : 'v3.2'
+    });
+    FB.AppEvents.logPageView();
+  };
+
+  (function(d, s, id){
+     var js, fjs = d.getElementsByTagName(s)[0];
+     if (d.getElementById(id)) {return;}
+     js = d.createElement(s); js.id = id;
+     js.src = "https://connect.facebook.net/en_US/sdk.js";
+     fjs.parentNode.insertBefore(js, fjs);
+   }(document, 'script', 'facebook-jssdk'));
+</script>
 	<div class="float-panel" data-top="0" data-scroll="200">
 		<nav class="nav-extended" style="background: linear-gradient(180deg, #00695c 0%, #004d40 100%);" >
 
