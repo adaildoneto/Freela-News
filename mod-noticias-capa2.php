@@ -1,4 +1,4 @@
-<div class="row grey lighten-3"  style="padding: 20px;">
+<div class="row grey darken-1"  style="padding: 20px;">
 	<div class="container">
 		<div class="center-align titulo">
 			<h5 class="white-text">Colunas</h5>
