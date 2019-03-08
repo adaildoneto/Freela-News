@@ -9,11 +9,11 @@
 get_header(); ?>
 <div class="container">
 	<div class="row">
-		<div id="content" class="col s12 l8 offset-l2" tabindex="-1" role="main">
+
 				<?php if ( have_posts() ) : ?>
 
 					<header class="page-header">
-						<h4 class="page-title"><?php printf( __( 'Search Results for: %s', 'odin' ), get_search_query() ); ?></h4>
+						<h4 class="page-title"><?php printf( __( 'Resultados da busca para: %s', 'odin' ), get_search_query() ); ?></h4>
 					</header><!-- .page-header -->
 
 						<?php
@@ -25,12 +25,13 @@ get_header(); ?>
 								 * use this in a child theme, then include a file called content-___.php
 								 * (where ___ is the post format) and that will be used instead.
 								 */
-								get_template_part( 'cardnews', 'destaque' );
+								 echo ('<div class="col s12 m6 l4">');
+		 			 get_template_part( 'cardnews', 'destaque' );
+		 					 echo ('</div>');
 
-							endwhile;
-
+		 		 endwhile;
 							// Post navigation.
-									echo ('<div class="s12 center-align">');
+									echo ('<div class=" col s12 center-align">');
 							wp_pagination();
 									echo ('</div>');
 						else :
@@ -40,7 +41,7 @@ get_header(); ?>
 					endif;
 				?>
 
-		</div><!-- #main -->
+
 
 	</div>
 

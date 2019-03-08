@@ -11,9 +11,9 @@
  */
 
 get_header(); ?>
-<div class="row">
-		<div class="container">
-	<main id="content" class="<?php echo odin_classes_page_sidebar(); ?>" tabindex="-1" role="main">
+<div class="container">
+		<div class="row">
+
 
 			<?php if ( have_posts() ) : ?>
 
@@ -33,25 +33,27 @@ get_header(); ?>
 							 * use this in a child theme, then include a file called content-___.php
 							 * (where ___ is the post format) and that will be used instead.
 							 */
+							 		echo ('<div class="col s12 m6 l4">');
 							get_template_part( 'cardnews', 'destaque' );
+									echo ('</div>');
 
 						endwhile;
 
 						// Page navigation.
-						echo ('<div class="s12 center-align">');
+						echo ('<div class="col s12 center-align">');
 				wp_pagination();
 						echo ('</div>');
 					else :
 						// If no content, include the "No posts found" template.
-						get_template_part( 'content', 'none' );
+						get_template_part( 'content', '' );
 
 				endif;
 			?>
 
-	</main><!-- #content -->
+
 </div>
 </div>
 
 <?php
-get_sidebar();
+
 get_footer();
