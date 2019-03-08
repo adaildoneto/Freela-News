@@ -27,10 +27,10 @@
               }?>
     </div>
   <div class="card-content center-align" >
-    <a href="<?php the_Permalink()?>" title="<?php the_title();?>" >
+    <a href="<?php the_Permalink()?>" title="<?php the_title();?>"/>
     <h5 class="white-text" >
     <?php the_title();?>
-  </h5  </a>
+  </h5>  </a>
     </div>
 
     </div>

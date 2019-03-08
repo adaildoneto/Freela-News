@@ -77,10 +77,8 @@ get_header(); ?>
 
 </div>
 
-<div class="divider">
 
-</div>
-<div class="row grey lighten-4" style="margin: 0px;">
+<div class="row teal lighten-1" style="margin: 0px;">
 	<div class="container">
 		<div class="row">
 			<?php include(TEMPLATEPATH.'/mod-noticias-linha.php');?>
