@@ -1,19 +1,4 @@
-/* customizando a logo da agencia no login */
 
-.login h1 a {
-background-image: url('http://jornalopiniao.net/web/wp-content/uploads/2019/03/Rio-Croa-12-Acre-Vitória-Régia-Cruzeiro-do-Sul-passeios-turisticos-santo-daime.jpg')!important;
-background-size: 100px 100px;
-width: 100px;
-height: 100px;
-}
-
-body.login {
-	background: url('http://jornalopiniao.net/web/wp-content/uploads/2019/02/Logo_Oficial_Opiniao_01-1.png') no-repeat center center fixed;
- 	-webkit-background-size: cover;
- 	-moz-background-size: cover;
- 	-o-background-size: cover;
- 	background-size: cover;
-}
 
 /* Smartphones (portrait and landscape) ----------- */
 @media (min-width : 320px) and (max-width: 480px){
@@ -197,7 +182,10 @@ body.login {
   height: 535px;
   }
 
-
+.himage{
+	width: 80px;
+	height: 80px;
+}
 
 h2.titulo-post {
   font-size: 2rem;
