@@ -101,6 +101,18 @@
         line-height: 2.1rem;
     }
 
+    .news-h {
+        padding: 5px 5px 5px 50px;
+        font-family: 'Roboto', sans-serif;
+        font-weight: 400;
+        font-size: 0.8 rem;
+        line-height: 0.9rem;
+    }
+
+    .new-text {
+      display: none!important;
+    }
+
     .news-hgrande {
         font-size: 1.8rem;
         line-height: 1.8rem;
@@ -251,7 +263,7 @@ h2.titulo-post {
 }
 
 .news-h {
-    padding: 5px 10px 10px 10px;
+    padding: 5px 5px 5px 50px;
     font-family: 'Roboto', sans-serif;
     font-weight: 400;
     font-size: 0.9rem;
