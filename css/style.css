@@ -64,6 +64,15 @@
   .intro-container {
     height:400px;
   }
+
+  .news-h {
+      padding: 5px 5px 5px 5px;
+      font-family: 'Roboto', sans-serif;
+      font-weight: 400;
+      font-size: 0.8 rem;
+      line-height: 0.9rem;
+  }
+  
   .news-especial {
     font-size: 3.2rem;
   }
