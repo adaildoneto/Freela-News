@@ -9,7 +9,7 @@
  */
 ?>
 
-<div class="row">
+<div class="col s10 offset-s1">
 
 	<section id="comments" class="content-wrap" itemscope itemtype="http://schema.org/Comment">
 		<?php if ( post_password_required() ) : ?>
