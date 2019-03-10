@@ -43,15 +43,12 @@
 
 		<?php if ( 'post' == get_post_type() ) : ?>
 			<div class="entry-meta center-align">
-				<?php		$alias = get_post_meta ( get_the_id(), 'author_alias', true );
-						if ( '' != $alias):
-						    $author = $alias;
-						else:
-						    $author = sprintf( '<a class="fn" href="%1$s" title="%2$s" rel="author">%3$s</a>',
-							esc_url( get_author_posts_url( get_the_author_meta( 'ID' ) ) ),
-							esc_attr( sprintf( __( 'View all posts by %s', 'icefit' ), get_the_author() ) ),
-							get_the_author() );
-						endif;
+				<?php		  $alias = get_post_meta($post->ID,'author_alias',true);
+                      if(empty($alias)){
+                        echo  $author = get_the_author_link();
+                      }else{
+                        echo $author = $alias;
+                      }
 				echo do_shortcode( '[ssba-buttons]' );
 				?>
 			</div><!-- .entry-meta -->
@@ -75,7 +72,9 @@
 			<span class="cat-links"><?php echo __( 'Posted in:', 'odin' ) . ' ' . get_the_category_list( _x( ', ', 'Used between list items, there is a space after the comma.', 'odin' ) ); ?></span>
 		<?php endif; ?>
 		<?php the_tags( '<span class="tag-links">' . __( 'Tagged as:', 'odin' ) . ' ', ', ', '</span>' ); ?>
-		<?php if ( ! post_password_required() && ( comments_open() || get_comments_number() ) ) : ?>
+		<?php 												// If comments are open or we have at least one comment, load up the comment template.
+	if ( comments_open() || get_comments_number() ) :
+		comments_template(); ?>
 			<span class="comments-link"><?php comments_popup_link( __( 'Leave a comment', 'odin' ), __( '1 Comment', 'odin' ), __( '% Comments', 'odin' ) ); ?></span>
 		<?php endif; ?>
 	</footer>
