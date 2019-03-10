@@ -25,7 +25,7 @@
 	<?php wp_head(); ?>
 </head>
 
-<body class="teal lighten-5">
+<body class="">
 	<script>
   window.fbAsyncInit = function() {
     FB.init({
