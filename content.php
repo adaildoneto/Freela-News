@@ -43,7 +43,15 @@
 
 		<?php if ( 'post' == get_post_type() ) : ?>
 			<div class="entry-meta center-align">
-				<?php odin_posted_on();
+				<?php		$alias = get_post_meta ( get_the_id(), 'author_alias', true );
+						if ( '' != $alias):
+						    $author = $alias;
+						else:
+						    $author = sprintf( '<a class="fn" href="%1$s" title="%2$s" rel="author">%3$s</a>',
+							esc_url( get_author_posts_url( get_the_author_meta( 'ID' ) ) ),
+							esc_attr( sprintf( __( 'View all posts by %s', 'icefit' ), get_the_author() ) ),
+							get_the_author() );
+						endif;
 				echo do_shortcode( '[ssba-buttons]' );
 				?>
 			</div><!-- .entry-meta -->
