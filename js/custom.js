@@ -106,6 +106,8 @@ jQuery(document).ready(function($) {
     $(".collapsible").collapsible();
     $("iframe[src*='youtube']").parent().fitVids();
     $("iframe[src*='web.facebook']").parent().fitVids();
+    $('#jp-relatedposts').find('h4').addClass('blue-grey-text darken-text-4 news');
+
 });
 
 jQuery(document).ready(function($) {
