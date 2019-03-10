@@ -44,7 +44,7 @@
 		<?php if ( 'post' == get_post_type() ) : ?>
 			<div class="entry-meta center-align">
 				<div class="card-action info-post">
-                    <span class="autor-post">
+                    <a href="#" class="btn flat"> <i class="fas fa-user-edit"></i>
                       <?php
 
                           $alias = get_post_meta($post->ID,'author_alias',true);
@@ -55,12 +55,10 @@
                       }
                       ?>
 
-                    </span></br>
-                    <span class="data-post"> <?php the_time('d.m.Y');?> </span>
-                    <span class="hora-post"> <?php the_time('G:i');?></span></br>
-                    <span class=""> Atualizado <?php the_modified_date('d.m.Y');?> às <?php the_modified_date('G:i');?> </span>
-
-                    	 <div class="clearfix"></div>
+                    </a>
+                    <a href="#" class="data-post btn flat"> <i class="far fa-calendar-check"></i> <?php the_time('d.m.Y');?> </a>
+                    <a href="#" class="hora-post btn flat"><i class="fas fa-clock"></i> <?php the_time('G:i');?></a>
+                      	 <div class="clearfix"></div>
                 </div>
 								<?php echo do_shortcode( '[ssba-buttons]' );
 								?>
