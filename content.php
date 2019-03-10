@@ -44,7 +44,7 @@
 		<?php if ( 'post' == get_post_type() ) : ?>
 			<div class="entry-meta center-align">
 				<div class="card-action info-post">
-                    <a href="#" class="btn flat"> <i class="fas fa-user-edit"></i>
+                    <a href="#" class="btn-flat disabled"> <i class="fas fa-user-edit"></i>
                       <?php
 
                           $alias = get_post_meta($post->ID,'author_alias',true);
@@ -56,12 +56,13 @@
                       ?>
 
                     </a>
-                    <a href="#" class="data-post btn flat"> <i class="far fa-calendar-check"></i> <?php the_time('d.m.Y');?> </a>
-                    <a href="#" class="hora-post btn flat"><i class="fas fa-clock"></i> <?php the_time('G:i');?></a>
+                    <a class="data-post btn-flat disabled"> <i class="far fa-calendar-check"></i> <?php the_time('d.m.Y');?> </a>
+                    <a class="hora-post btn-flat disabled"><i class="fas fa-clock"></i> <?php the_time('G:i');?></a>
+										<?php echo do_shortcode( '[ssba-buttons]' );
+										?>
                       	 <div class="clearfix"></div>
                 </div>
-								<?php echo do_shortcode( '[ssba-buttons]' );
-								?>
+
 			</div><!-- .entry-meta -->
 		<?php endif; ?>
 
