@@ -13,7 +13,7 @@
 <?php if( !empty( $image ) ): ?>
 	<div class="row">
 
-	<div class="container intro-container" style="background: linear-gradient(to bottom, rgba(0,0,0,0) 0%,rgba(0,0,0,0) 52%,rgba(0,0,0,0.65) 84%,rgba(0,0,0,0.65) 100%), url('<?php echo $image[0]; ?>'); background-position: center; background-size: cover; margin-top: -180px">
+	<div class="container intro-container" style="background: linear-gradient(to bottom, rgba(0,0,0,0) 0%,rgba(0,0,0,0) 52%,rgba(0,0,0,0.65) 84%,rgba(0,0,0,0.65) 100%), url('<?php echo $image[0]; ?>'); background-position: center; background-size: cover; margin-top: -205px">
 	</div>
 
 	<div class="embassada" style="background: linear-gradient(to bottom, rgba(0,0,0,0) 0%,rgba(0,0,0,0) 52%,rgba(0,0,0,0.65) 84%,rgba(0,0,0,0.65) 100%), url('<?php echo $image[0]; ?>'); background-position: center; background-size: cover; filter: grayscale(100%) blur(5px);">
