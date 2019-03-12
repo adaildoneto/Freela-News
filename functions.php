@@ -25,6 +25,11 @@ add_image_size( "cardnews", 280, 120, array ( 'center', 'top' ) );
 add_image_size( "quadrado", 80, 80, array ( 'center', 'top' ) );
 add_image_size( "big-quadrado", 200, 180, array ( 'center', 'top' ) );
 add_image_size( "capa", 1080, 500, array ( 'center', 'top' ) );
+
+/**
+ * liberandoo acesso ao gutenbeg
+ */
+add_theme_support( 'align-wide' );
 /**
  * Odin Classes.
  */
@@ -474,7 +479,7 @@ function wp_pagination($pages = '', $range = 9)
 }
 
 
-// custom login 
+// custom login
 function custom_login_css() {
 echo '<link rel="stylesheet" type="text/css" href="'.get_stylesheet_directory_uri().'/style.css"/>';
 }

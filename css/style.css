@@ -72,7 +72,7 @@
       font-size: 0.8 rem;
       line-height: 0.9rem;
   }
-  
+
   .news-especial {
     font-size: 3.2rem;
   }
@@ -419,4 +419,23 @@ a img.aligncenter {
 
 b, strong {
         font-weight: bold;
+}
+
+@media only screen and (min-width: 1140px) {
+    .alignfull, .alignwide {
+        margin-bottom: 2em;
+    }
+    .alignwide {
+        width: 75vw;
+        margin-left: calc( 50% - 75vw / 2 );
+        max-width: none;
+    }
+}
+.alignfull {
+    width: 100vw;
+    margin-left: calc( 50% - 50vw );
+    max-width: none;
+}
+.wp-block-image.alignfull img, .wp-block-image.alignwide img {
+    width: 100%;
 }
