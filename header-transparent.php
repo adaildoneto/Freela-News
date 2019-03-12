@@ -92,19 +92,23 @@
 							</div>
 
 
-					<div class="col s12 hide-on-med-and-down esconder ">
-							 <?php
-														 wp_nav_menu( array(
-								 'theme_location'    => 'main-menu',
-								 'menu_id'           => 'primary-menu',
-								 'menu_class' 	    => 'center-align hide-on-med-and-down',
-								 'container'				=> 'ul',
-								 'container_class'	=>	'',
-								 'walker'		    =>	new Materialize_Walker_Nav_Menu(),
-							 ) );
-							 ?>
+							<div class="col s12 hide-on-med-and-down esconder">
+								<div class="center4">
+									<?php
+																wp_nav_menu( array(
+										'theme_location'    => 'main-menu',
+										'menu_id'           => 'primary-menu',
+										'menu_class' 	    => 'hide-on-med-and-down',
+										'container'				=> 'ul',
+										'container_class'	=>	'',
+										'walker'		    =>	new Materialize_Walker_Nav_Menu(),
+									) );
+									?>
+								</div>
 
-					 </div>
+
+							 </div>
+
 
 
 

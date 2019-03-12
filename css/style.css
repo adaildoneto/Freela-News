@@ -444,3 +444,7 @@ b, strong {
 .entry-content > *.alignwide {
 	max-width: 1024px;
 }
+
+.center4 {
+  text-align: center;
+}
