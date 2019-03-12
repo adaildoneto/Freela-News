@@ -92,7 +92,7 @@
 							</div>
 
 
-							<div class="col s12 hide-on-med-and-down esconder">
+							<div class="container hide-on-med-and-down esconder">
 								<div class="center4">
 									<?php
 																wp_nav_menu( array(
