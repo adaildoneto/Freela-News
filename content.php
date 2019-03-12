@@ -43,7 +43,7 @@
 
 		<?php if ( 'post' == get_post_type() ) : ?>
 			<div class="entry-meta center-align">
-				<div class="card-action info-post">
+				<div class="info-post">
                     <a href="#" class="btn-flat disabled"> <i class="fas fa-user-edit"></i>
                       <?php
 
