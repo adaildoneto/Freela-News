@@ -479,8 +479,30 @@ function wp_pagination($pages = '', $range = 9)
 }
 
 
-// custom login
-function custom_login_css() {
-echo '<link rel="stylesheet" type="text/css" href="'.get_stylesheet_directory_uri().'/style.css"/>';
+
+
+// IMPORTANT UPDATE 20190307:
+// Since WordPress 5.0.0 we can actually use much simpler solution:
+/**
+ * Applies wrapper div around aligned blocks.
+ *
+ * Copy this function into your WordPress theme's `functions.php` file
+ * and change the `themeprefix` accordingly.
+ *
+ * @see   https://developer.wordpress.org/reference/hooks/render_block/
+ * @link  https://codepen.io/webmandesign/post/gutenberg-full-width-alignment-in-wordpress-themes
+ *
+ * @param  string $block_content  The block content about to be appended.
+ * @param  array  $block          The full block, including name and attributes.
+ */
+function themeprefix_wrap_alignment( $block_content, $block ) {
+	if ( isset( $block['attrs']['align'] ) && in_array( $block['attrs']['align'], array( 'wide', 'full' ) ) ) {
+		$block_content = sprintf(
+			'<div class="%1$s">%2$s</div>',
+			'align-wrap align-wrap-' . esc_attr( $block['attrs']['align'] ),
+			$block_content
+		);
+	}
+	return $block_content;
 }
-add_action('login_head', 'custom_login_css');
+add_filter( 'render_block', 'themeprefix_wrap_alignment', 10, 2 );
