@@ -48,7 +48,7 @@
 
 		<nav class="nav-extended z-depth-0 transparente" style="background: linear-gradient(to bottom, rgba(0,0,0,0.65) 0%,rgba(0,0,0,0.65) 35%,rgba(0,0,0,0) 100%);" >
 
-			<div class="container">
+			<div>
 				<div class="row">
 					<div class="col s1 m1 l1">
 	<a href="#" data-target="mobile-menu" class="sidenav-trigger show-on-large">	<i class="fas fa-bars"></i></a>
@@ -56,7 +56,7 @@
 
 					</div>
 
-						<div class="col s11 m9 l9">
+						<div class="col s11 m9 l10">
 
 							<?php if (has_custom_logo() ): ?>
 
@@ -82,7 +82,7 @@
 
 						</div>
 
-							<div class="col m2 l2 right-align hide-on-small-only">
+							<div class="col m1 l1 right-align hide-on-small-only">
 
 <a class="waves-effect waves-light btn-flat modal-trigger" href="#modal1">	<i class="fas fa-search white-text"></i></a>
 
@@ -92,7 +92,7 @@
 							</div>
 
 
-					<div class="col s12 hide-on-med-and-down esconder">
+					<div class="col s12 hide-on-med-and-down esconder center">
 							 <?php
 														 wp_nav_menu( array(
 								 'theme_location'    => 'main-menu',
