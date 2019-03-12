@@ -421,9 +421,26 @@ b, strong {
         font-weight: bold;
 }
 
-.wrappers {
-    height: 100%;
-    min-height: 100%;
-    position: absolute;
-    z-index: 9999; /* número máximo é 9999 */
+.entry-content .alignfull {
+    margin-left  : calc( -100vw / 2 + 100% / 2 );
+    margin-right : calc( -100vw / 2 + 100% / 2 );
+    max-width    : 100vw;
+}
+
+.entry-content .alignwide {
+    margin-left  : -100px;
+    margin-right : -100px;
+    max-width    : 1024px;
+}
+
+.entry-content > *:not( .alignwide ):not( .alignfull ) {
+	margin-left: auto;
+	margin-right: auto;
+	max-width: 740px;
+	padding-left: 20px;
+	padding-right: 20px;
+}
+
+.entry-content > *.alignwide {
+	max-width: 1024px;
 }
