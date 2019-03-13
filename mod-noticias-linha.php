@@ -91,7 +91,7 @@
                 if ( $myquery->current_post == 0 )  {
                         get_template_part( 'cardnews', '' );
                       } else {
-                            get_template_part( 'cardnews', 'horizontal' );
+                            get_template_part( 'cardnews', '' );
 
                       }
 
@@ -124,7 +124,7 @@
                 if ( $myquery->current_post == 0 )  {
                         get_template_part( 'cardnews', '' );
                       } else {
-                            get_template_part( 'cardnews', 'horizontal' );
+                            get_template_part( 'cardnews', '' );
 
                       }
 
@@ -157,7 +157,7 @@
                 if ( $myquery->current_post == 0 )  {
                         get_template_part( 'cardnews', '' );
                       } else {
-                            get_template_part( 'cardnews', 'horizontal' );
+                            get_template_part( 'cardnews', '' );
 
                       }
 
