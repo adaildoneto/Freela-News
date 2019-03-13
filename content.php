@@ -37,7 +37,7 @@
 				the_title( '<div class="center-align"><h1 class="entry-title titulo-post">', '</h1></center>' );
 
 			else :
-				the_title( '<h2 class="entry-title titulo-post"><a href="' . esc_url( get_permalink() ) . '" rel="bookmark">', '</a></h2>' );
+				the_title( '<div class="center-align"><h1 class="entry-title titulo-post">', '</h1></center>' );
 			endif;
 		?>
 
