@@ -7,6 +7,7 @@ jQuery(document).ready(function ($) {
   speed: 1800,
   infinite: true,
   autoplay: true,
+  dots: true,
   autoplaySpeed: 6000,
   responsive: [
   {
@@ -14,7 +15,8 @@ jQuery(document).ready(function ($) {
   settings: {
   slidesToShow: 1,
   slidesToScroll: 1,
-  dots: true
+  dots: true,
+  arrows: false
   }
   },
   {
@@ -22,6 +24,7 @@ jQuery(document).ready(function ($) {
   settings: {
   slidesToShow: 1,
   slidesToScroll: 1,
+  dots: true,
   arrows: false
   }
   },
@@ -30,6 +33,7 @@ jQuery(document).ready(function ($) {
   settings: {
   slidesToShow: 1,
   slidesToScroll: 1,
+  dots: true,
   arrows: false
   }
   }
@@ -49,6 +53,7 @@ jQuery(document).ready(function ($) {
   slidesToScroll: 3,
   fade: false,
   speed: 1800,
+    dots: true,
   infinite: true,
   autoplay: true,
   autoplaySpeed: 6000,
@@ -66,7 +71,8 @@ jQuery(document).ready(function ($) {
   settings: {
   slidesToShow: 2,
   slidesToScroll: 1,
-  arrows: false
+  dots: true,
+  arrows: true
   }
   },
   {
@@ -74,7 +80,8 @@ jQuery(document).ready(function ($) {
   settings: {
   slidesToShow: 1,
   slidesToScroll: 1,
-  arrows: false
+  dots: true,
+  arrows: true
   }
   }
   // You can unslick at a given breakpoint now by adding:
