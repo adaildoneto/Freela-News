@@ -103,6 +103,9 @@
       height: 320px;
       width: 100%;
     }
+    nav ul a {
+        font-size: 0.8rem;
+    }
     .news-slider {
         padding-right: 10%;
         font-weight: 800;
