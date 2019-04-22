@@ -109,7 +109,6 @@ jQuery(document).ready(function($) {
     $(".modal").modal();
     $(".wp-caption").width('auto').height('auto');
     $(".wp-caption-text").width('auto').height('auto');
-    $(".wp-caption .aligncenter").addClass('alignleft');
     $(".collapsible").collapsible();
     $("iframe[src*='youtube']").parent().fitVids();
     $("iframe[src*='web.facebook']").parent().fitVids();
@@ -121,7 +120,7 @@ jQuery(document).ready(function($) {
 var header = $(".float-panel");
   $(window).scroll(function() {
     var scroll = $(window).scrollTop();
-       if (scroll >= 350) {
+       if (scroll >= 450) {
            $('.esconder').hide();
             $('.transparente').addClass('grey darken-3');
         } else {
