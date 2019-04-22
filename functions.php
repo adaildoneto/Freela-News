@@ -20,11 +20,11 @@ if ( ! isset( $content_width ) ) {
 	$content_width = 600;
 }
 
-add_image_size( "slider", 600, 400, array ( 'center', 'top' ) );
-add_image_size( "cardnews", 280, 120, array ( 'center', 'top' ) );
-add_image_size( "quadrado", 80, 80, array ( 'center', 'top' ) );
-add_image_size( "big-quadrado", 200, 180, array ( 'center', 'top' ) );
-add_image_size( "capa", 1080, 500, array ( 'center', 'top' ) );
+add_image_size( "slider", 600, 400,);
+add_image_size( "cardnews", 280, 120,);
+add_image_size( "quadrado", 80, 80, );
+add_image_size( "big-quadrado", 200, 180,);
+add_image_size( "capa", 1080, 500,);
 
 /**
  * liberandoo acesso ao gutenbeg
